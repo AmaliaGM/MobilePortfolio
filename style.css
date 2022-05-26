@@ -1,0 +1,19 @@
+
+
+.navbar{
+    .menu = position: right;
+    align-content: stretch;
+}
+
+body{
+    background-image:url(header-illsutration-mobile.png);
+    background-size:cover;
+    background-attachment: fixed;
+    background-color:white;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5mm;
+}
