@@ -1,8 +1,7 @@
 
 
 .navbar{
-    .menu = position: right;
-    align-content: stretch;
+    align-items: stretch;
 }
 
 body{
