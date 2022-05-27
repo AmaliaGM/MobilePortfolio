@@ -8,8 +8,12 @@ The aim of this project is to learn to understand how to parse a Figma design, u
 - css
 
 ## Author: Maria Amalia Gomez Moro
--GitHub: @AmaliaGM
--Twitter: @AmaliaGomezMoro
--Linkedin: @MariaAmaliaGomezMoro
+1. GitHub: @AmaliaGM
+2. Twitter: @AmaliaGomezMoro
+3. Linkedin: @MariaAmaliaGomezMoro
 
+## Acknowledgments
+    To my son for putting up with me through Microverse Course.
+    To my coding partner.
+    To my mentor.
 
