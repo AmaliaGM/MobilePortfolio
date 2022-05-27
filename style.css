@@ -1,9 +1,22 @@
+header{
 
-
-.navbar{
-    align-items: stretch;
+    text-align: left;
 }
+.flex-container{
+    display: flex;
+    width: max-content;
+    align-items: stretch;
 
+}
+.menu{
+    align-content: center;
+    float: right;
+
+}
+.welcome{
+    margin-top: 30px;
+    margin-left: 10px; 
+}
 body{
     background-image:url(header-illsutration-mobile.png);
     background-size:cover;
@@ -14,5 +27,19 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 5mm;
+    align-content: stretch;
+}
+
+.main{
+    text-align: center;
+    align-content:space-between;
+}
+
+h2{
+    color:mediumturquoise;
+    font-size:xx-large;
+}
+p{
+    padding: 3%;
+    
 }
