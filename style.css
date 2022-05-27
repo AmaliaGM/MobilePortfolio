@@ -1,10 +1,11 @@
 header {
-    display: flex;
-    flex-direction: row;
-    padding-top: 5%;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
+  justify-content: space-around;
+  align-items: center;
 }
+
 .welcome {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -38,13 +39,15 @@ h2 {
 p {
   font-size: medium;
 }
+
 .icons {
   display: flex;
   padding: 20%;
   justify-content: space-around;
   max-width: 200px;
-  align-items: center;  
-  }
+  align-items: center;
+}
+
 .icons li {
   float: left;
   list-style: none;
