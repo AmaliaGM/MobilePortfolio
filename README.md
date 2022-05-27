@@ -8,18 +8,6 @@ The aim of this project is to learn to understand how to parse a Figma design, u
 - HTML
 - css
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
 ## Author: Maria Amalia Gomez Moro
 1. GitHub: @AmaliaGM
 2. Twitter: @AmaliaGomezMoro
@@ -42,4 +30,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](MIT.md) licensed.
