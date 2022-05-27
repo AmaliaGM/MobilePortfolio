@@ -2,16 +2,11 @@ header{
 
     text-align: left;
 }
-.flex-container{
-    display: flex;
-    width: max-content;
-    align-items: stretch;
 
-}
 .menu{
     align-content: center;
     float: right;
-
+    margin-bottom: 20px;    
 }
 .welcome{
     margin-top: 30px;
