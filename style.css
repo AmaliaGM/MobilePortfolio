@@ -29,6 +29,11 @@ body {
   justify-content: space-evenly;
 }
 
+.img1{
+  width: 100%;
+  height: auto;
+}
+
 .illustration {
   position: absolute;
   width: 430.38px;
@@ -89,7 +94,7 @@ body {
   display: grid;
   grid-template-rows: 25% 20% 15%;
   font-family: 'Inter', 'Arial Narrow Bold', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 52px;
   align-items: center;
   text-align: center;
@@ -117,25 +122,38 @@ body {
 
 .planholder {
   display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: auto auto auto;
-  width: min-content;
+  grid-template-columns: auto auto auto;
+  width: auto;
   height: auto;
   justify-content: center;
-  padding: 30px;
+  padding: 0;
+  margin: auto;
+  align-items: center;
+  align-content: center;
 }
 
 .img {
-  width: min-content;
-  height: min-content;
+  width: 90%;
+  height: auto;
+  margin-top: 10px;
+  align-items: center;
 }
 
+ul.language {
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
 
 ul.language li {
   display: inline;
-  list-style-type: none;
-  width: 100%;
-  
+  list-style-type: none;  
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects {
