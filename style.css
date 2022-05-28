@@ -130,9 +130,12 @@ body {
   height: min-content;
 }
 
-.language {
+
+ul.language li {
+  display: inline;
   list-style-type: none;
   width: 100%;
+  
 }
 
 .projects {
