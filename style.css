@@ -29,21 +29,17 @@ body {
   justify-content: space-evenly;
 }
 
-.img1{
-  width: 100%;
-  height: auto;
-}
-
 .illustration {
   position: absolute;
-  width: 430.38px;
-  height: 648px;
-  top: 98.12px;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  object-fit: fill;
 }
 
 .amalia {
-  width: 327px;
-  height: 192px;
+  width: 100%;
+  height: auto;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -51,7 +47,7 @@ body {
   line-height: 52px;
   text-align: center;
   color: #172b4d;
-  margin-bottom: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -62,6 +58,8 @@ body {
 
 .contact {
   font-size: medium;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .icons {
