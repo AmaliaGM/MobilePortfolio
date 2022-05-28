@@ -149,7 +149,6 @@ ul.language {
 ul.language li {
   display: inline;
   list-style-type: none;
-  
   width: fit-content;
   justify-content: center;
   align-items: center;
