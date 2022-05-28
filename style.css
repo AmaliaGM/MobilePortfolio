@@ -218,6 +218,7 @@ ul.languages li {
   justify-content: center;
   align-items: center;
 }
+
 .skills {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -249,7 +250,6 @@ ul.languages li {
 .box3 {
   color: rgba(61, 60, 61, 0.282);
   height: 200px;
-  max-height: ;
 }
 
 .touch {
