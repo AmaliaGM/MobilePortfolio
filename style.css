@@ -207,7 +207,8 @@ ul.languages {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding-right: 3%;
+  padding-left: 3%;
 }
 
 ul.languages li {
@@ -246,9 +247,9 @@ ul.languages li {
 .box1,
 .box2,
 .box3 {
-  color: thistle;
+  color: rgba(61, 60, 61, 0.282);
   height: 200px;
-  max-height: 35vh;
+  max-height: ;
 }
 
 .touch {
