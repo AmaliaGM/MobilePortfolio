@@ -26,31 +26,32 @@ body {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   text-align: center;
   align-items: center;
-  justify-content:space-evenly
+  justify-content: space-evenly;
 }
-.illustration {
-    position: absolute;
-    width: 430.38px;
-    height: 648px;
-    top: 98.12px;
-}
-.amalia {
-    width: 327px;
-height: 192px;
-font-family: 'Inter', Arial, Helvetica, sans-serif;
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 52px;
-text-align: center;
-color: #172B4D;
-margin-bottom: 0;
-padding: 0;
 
+.illustration {
+  position: absolute;
+  width: 430.38px;
+  height: 648px;
+  top: 98.12px;
+}
+
+.amalia {
+  width: 327px;
+  height: 192px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .developer {
-  color: #36B37F;
+  color: #36b37f;
   font-size: xx-large;
 }
 
@@ -73,45 +74,45 @@ padding: 0;
   margin: 0;
   padding: 0;
 }
+
 .frame {
-max-inline-size: 100%;
-object-fit: cover;
-block-size: auto;
-width: 92.81px;
-height: 132.37px;
-left: 409.63px;
-top: 6225px;
+  max-inline-size: 100%;
+  object-fit: cover;
+  block-size: auto;
+  width: 92.81px;
+  height: 132.37px;
+  left: 409.63px;
+  top: 6225px;
 }
+
 .title {
-    display: grid;
-    grid-template-rows: 25% 20% 15%;
-    font-family: 'Inter', 'Arial Narrow Bold', sans-serif;
-    font-size: 40px;
-    line-height: 52px;
-    align-items: center;
-    text-align: center;
-    color: #172b4d;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
+  display: grid;
+  grid-template-rows: 25% 20% 15%;
+  font-family: 'Inter', 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  color: #172b4d;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
 }
 
 .descript {
-    display: grid;
-    
-    
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 32px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin-left: 26px;
-    margin-right: 22px;
-    color: #3A4A42;
-    padding: 16px;
+  display: grid;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-left: 26px;
+  margin-right: 22px;
+  color: #3a4a42;
+  padding: 16px;
 }
 
 .planholder {
@@ -123,25 +124,26 @@ line-height: 32px;
   justify-content: center;
   padding: 30px;
 }
+
 .img {
-  width:min-content;
+  width: min-content;
   height: min-content;
 }
-.language {
-    list-style-type: none;
-    width: 100%;
 
-}   
+.language {
+  list-style-type: none;
+  width: 100%;
+}
+
 .projects {
-    display:block;
-    margin:auto;
-    margin-top: 25px;
-  background-color: #36B37F;
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  background-color: #36b37f;
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   font-size: 16px;
   justify-content: center;
-
 }
