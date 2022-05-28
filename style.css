@@ -175,26 +175,29 @@ ul.language li {
   justify-content: center;
   text-align: center;
 }
-.me {  
-width: 100%;
-height: auto;
-font-family: 'Inter', Arial, Helvetica, sans-serif;
-font-style: normal;
-align-items: center;
-text-align: center;
-color: #172B4D;
-font-size: 40px;
+
+.me {
+  width: 100%;
+  height: auto;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  color: #172b4d;
+  font-size: 40px;
 }
+
 .help {
   padding-left: 10%;
   padding-right: 10%;
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 32px;
-color: #42526E;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
 }
+
 ul.languages {
   display: grid;
   grid-template-columns: 30% 30% 30%;
@@ -207,6 +210,7 @@ ul.languages {
   margin: 0;
   padding: 10;
 }
+
 ul.languages li {
   display: inline;
   list-style-type: none;
@@ -214,30 +218,48 @@ ul.languages li {
   justify-content: center;
   align-items: center;
 }
+
 .skills {
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 32px;
-text-align: center;
-color: #344563;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
 }
-.form{
+
+.form {
   text-align: center;
   border-color: #172b4d;
-  display:grid;
+  display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: min-content; 
+  grid-template-rows: min-content;
 }
+
 .aboutyou {
   text-align: left;
   align-items: left;
-  padding: 20px
+  padding: 20px;
 }
-.box1, .box2, .box3 {
-  
+
+.box1,
+.box2,
+.box3 {
   color: thistle;
-  height:200px;
+  height: 200px;
   max-height: 35vh;
+}
+.touch {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #36b37f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    justify-content: flex-end;
+  }
 }
