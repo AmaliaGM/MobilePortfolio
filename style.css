@@ -199,16 +199,15 @@ ul.language li {
 }
 
 ul.languages {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 50%;
+  display: flex;
+  flex-direction: row;
   background-position: center;
   box-shadow: thistle;
   align-content: center;
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 10;
+  padding: 0;
 }
 
 ul.languages li {
@@ -218,7 +217,6 @@ ul.languages li {
   justify-content: center;
   align-items: center;
 }
-
 .skills {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
@@ -227,6 +225,8 @@ ul.languages li {
   line-height: 32px;
   text-align: center;
   color: #344563;
+  padding: 0;
+  margin: 0;
 }
 
 .form {
