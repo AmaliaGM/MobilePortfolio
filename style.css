@@ -19,7 +19,6 @@ body {
 }
 
 .main {
-  background-image: url(frame.png);
   display: flex;
   flex-direction: column;
   padding-left: 10%;
@@ -33,9 +32,9 @@ body {
 .illustration {
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .amalia {
@@ -85,7 +84,6 @@ body {
   block-size: auto;
   width: 92.81px;
   height: 132.37px;
-  left: 409.63px;
   top: 6225px;
 }
 
@@ -107,26 +105,22 @@ body {
   display: grid;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
+  font-size: 100%;
   line-height: 32px;
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin-left: 26px;
-  margin-right: 22px;
   color: #3a4a42;
   padding: 16px;
 }
 
 .planholder {
   display: grid;
-  grid-template-columns: auto auto auto;
-  width: auto;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+  width: 100%;
   height: auto;
   justify-content: center;
-  padding: 0;
-  margin: auto;
   align-items: center;
   align-content: center;
 }
@@ -156,8 +150,7 @@ ul.language li {
 }
 
 .projects {
-  display: block;
-  margin: auto;
+  display: inline-block;
   margin-top: 25px;
   background-color: #36b37f;
   border: none;
@@ -166,6 +159,9 @@ ul.language li {
   text-align: center;
   font-size: 16px;
   justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
 }
 
 .resume {
@@ -201,11 +197,8 @@ ul.language li {
 ul.languages {
   display: flex;
   flex-direction: row;
-  background-position: center;
-  box-shadow: thistle;
   align-content: center;
-  justify-content: center;
-  align-items: center;
+  justify-content: baseline;
   margin: 0;
   padding-right: 3%;
   padding-left: 3%;
@@ -216,19 +209,28 @@ ul.languages li {
   list-style-type: none;
   width: fit-content;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
 }
 
 .skills {
+  display: inline-block;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 100%;
+  line-height: 10%;
   text-align: center;
   color: #344563;
-  padding: 0;
-  margin: 0;
+  padding: 5%;
+  margin-top: 30%;
+  margin-bottom: 10%;
+  align-items: baseline;
+}
+
+.aboutyou {
+  text-align: left;
+  align-items: right;
+  padding: 20px;
+  justify-content: space-between;
 }
 
 .form {
@@ -239,22 +241,26 @@ ul.languages li {
   grid-template-rows: min-content;
 }
 
-.aboutyou {
-  text-align: left;
-  align-items: left;
-  padding: 20px;
-}
-
 .box1,
 .box2,
 .box3 {
-  color: rgba(61, 60, 61, 0.282);
-  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+  background-color: rgba(61, 60, 61, 0.282);
+  height: 80%;
+  width: 90%;
+  margin: 10%;
+  align-content: center;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+.last head {
+  align-self: center;
 }
 
 .touch {
-  display: block;
-  margin: auto;
+  display: grid;
   margin-top: 25px;
   background-color: #36b37f;
   border: none;
