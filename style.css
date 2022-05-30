@@ -207,7 +207,7 @@ ul.language li {
 
 .aboutyou {
   display: flex;
-  flex-grow: 1;
+  flex-direction: column;
   width: 100%;
   text-align: center;
   align-items: center;
@@ -216,13 +216,11 @@ ul.language li {
 }
 
 .form {
-  display: flex;
-  flex-grow: 1;
+  display: inline-block;
   text-align: left;
   border-color: #172b4d;
-  display: inline-block;
   width: 90%;
-  justify-content: space-between;
+  justify-content: center;
   align-content: center;
   justify-items: left;
   padding: 10px 70px 40px 0;
@@ -265,6 +263,7 @@ ul.language li {
   align-content: center;
   justify-content: center;
   margin-top: 10%;
+  border-radius: 50%;
 }
 
 .mail {
