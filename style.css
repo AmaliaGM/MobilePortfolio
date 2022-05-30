@@ -64,11 +64,9 @@ body {
 
 .icons {
   display: flex;
-  padding: 20%;
-  padding-bottom: 10%;
-  gap: 10px;
+  padding: 5%;
+  gap: 5px;
   justify-content: space-around;
-  max-width: 200px;
   align-items: baseline;
 }
 
@@ -116,13 +114,13 @@ body {
 
 .planholder {
   display: grid;
-  grid-auto-flow: row;
   grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
   width: 100%;
-  height: auto;
+  height: 90%;
   justify-content: center;
   align-items: center;
   align-content: center;
+  justify-items: center;
 }
 
 .img {
@@ -164,6 +162,9 @@ ul.language li {
   align-content: center;
 }
 
+#lasthead {
+  justify-content: center;
+}
 .resume {
   display: flex;
   flex-direction: column;
@@ -194,79 +195,87 @@ ul.language li {
   color: #42526e;
 }
 
-ul.languages {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: baseline;
-  margin: 0;
-  padding-right: 3%;
-  padding-left: 3%;
-}
-
-ul.languages li {
-  display: inline;
-  list-style-type: none;
-  width: fit-content;
-  justify-content: center;
-  align-items: baseline;
-}
-
 .skills {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 100%;
-  line-height: 10%;
+  line-height: 15%;
   text-align: center;
   color: #344563;
-  padding: 5%;
-  margin-top: 30%;
-  margin-bottom: 10%;
-  align-items: baseline;
+  align-items: center;
+  margin-top: 0;
+  
 }
 
 .aboutyou {
-  text-align: left;
-  align-items: right;
-  padding: 20px;
-  justify-content: space-between;
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  margin: 5%;
+  justify-content: center;
 }
 
 .form {
-  text-align: center;
+  display: flex;
+  flex-grow: 1;
+  text-align: left;
   border-color: #172b4d;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: min-content;
+  display: inline-block;
+  width: 90%;
+  justify-content:space-between;
+  align-content: center;
+  justify-items: left;
+  padding: 10px 70px 40px 0;
+  padding-left: 10px;
 }
 
 .box1,
 .box2,
-.box3 {
+.box3 { 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(10rem, 100%), 1fr));
+  grid-template-columns: 1fr;
   background-color: rgba(61, 60, 61, 0.282);
-  height: 80%;
-  width: 90%;
-  margin: 10%;
-  align-content: center;
-  align-items: baseline;
-  justify-content: space-evenly;
+  height: 95%;
+  width: 85%;
+  margin: 20%;
+  gap: 10%;
+  place-items: center;
 }
 
-.last head {
-  align-self: center;
-}
-
-.touch {
-  display: grid;
-  margin-top: 25px;
+.touch { 
+  display: inline;
   background-color: #36b37f;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 5px 10px;
   text-align: center;
   font-size: 16px;
-  justify-content: flex-end;
+  justify-items: center;
+  align-content: center;
+  border-radius: 6px;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  justify-content: center;
 }
+
+.icon {
+  display: inline-flex;
+  align-items: baseline;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.mail {
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 30%;
+ }
