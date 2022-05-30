@@ -160,6 +160,9 @@ ul.language li {
 .resume {
   display: flex;
   flex-direction: column;
+  background-image: url(aboutme.png);
+  background-position: absolute;
+  background-size: cover;
   align-items: center;
   justify-content: center;
   text-align: center;
