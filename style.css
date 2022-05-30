@@ -162,9 +162,6 @@ ul.language li {
   align-content: center;
 }
 
-#lasthead {
-  justify-content: center;
-}
 .resume {
   display: flex;
   flex-direction: column;
@@ -205,8 +202,7 @@ ul.language li {
   text-align: center;
   color: #344563;
   align-items: center;
-  margin-top: 0;
-  
+  margin-bottom: 20px;
 }
 
 .aboutyou {
@@ -226,7 +222,7 @@ ul.language li {
   border-color: #172b4d;
   display: inline-block;
   width: 90%;
-  justify-content:space-between;
+  justify-content: space-between;
   align-content: center;
   justify-items: left;
   padding: 10px 70px 40px 0;
@@ -235,18 +231,17 @@ ul.language li {
 
 .box1,
 .box2,
-.box3 { 
+.box3 {
   display: grid;
-  grid-template-columns: 1fr;
   background-color: rgba(61, 60, 61, 0.282);
   height: 95%;
-  width: 85%;
-  margin: 20%;
+  width: 95%;
+  margin-left: 10%;
   gap: 10%;
   place-items: center;
 }
 
-.touch { 
+.touch {
   display: inline;
   background-color: #36b37f;
   border: none;
@@ -273,9 +268,9 @@ ul.language li {
 }
 
 .mail {
-  display:flex;
+  display: flex;
   text-align: center;
   justify-content: center;
   justify-items: center;
   margin-bottom: 30%;
- }
+}
