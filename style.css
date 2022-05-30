@@ -21,7 +21,7 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  background-image: url(header.png);
+  background-image: url(images/header.png);
   background-size: cover;
   background-position: center;
   padding-left: 10%;
@@ -160,7 +160,7 @@ ul.language li {
 .resume {
   display: flex;
   flex-direction: column;
-  background-image: url(aboutme.png);
+  background-image: url(images/aboutme.png);
   background-position: absolute;
   background-size: cover;
   align-items: center;
