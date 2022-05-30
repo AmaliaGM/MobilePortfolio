@@ -23,7 +23,7 @@ body {
   flex-direction: column;
   background-image: url(header.png);
   background-size: cover;
-  background-position:center;
+  background-position: center;
   padding-left: 10%;
   padding-right: 10%;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
