@@ -14,8 +14,6 @@ header {
 }
 
 body {
-  margin-left: 0;
-  margin-right: 0;
   justify-content: center;
   background-attachment: fixed;
   background-color: white;
@@ -77,20 +75,11 @@ body {
   padding: 0;
 }
 
-.frame {
-  max-inline-size: 100%;
-  object-fit: cover;
-  block-size: auto;
-  width: 92.81px;
-  height: 132.37px;
-  top: 6225px;
-}
-
 .title {
   display: flex;
   flex-direction: column;
   font-family: 'Inter', 'Arial Narrow Bold', sans-serif;
-  font-size: 30px;
+  font-size: 100%;
   line-height: 52px;
   align-items: center;
   text-align: center;
@@ -116,8 +105,8 @@ body {
 .planholder {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
-  width: 100%;
-  height: 90%;
+  width: 97%;
+  height: auto;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -127,9 +116,10 @@ body {
 @media screen and (min-width: 768px) {
   .planholder {
     display: grid;
-    grid-template-columns: auto auto auto;
-  }
- 
+    grid-template-columns: 33% 33% 33%;
+    margin-right: 0;
+    justify-content: stretch;
+  } 
 }
 
 .img {
@@ -179,6 +169,7 @@ ul.language li {
   background-image: url(images/aboutme.png);
   background-position: absolute;
   background-size: cover;
+  background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -217,6 +208,7 @@ ul.language li {
   color: #344563;
   align-items: center;
   margin-bottom: 20px;
+  padding-bottom: 5%;
 }
 
 .box1,
@@ -224,11 +216,12 @@ ul.language li {
 .box3 {
   display: grid;
   background-color: rgba(61, 60, 61, 0.282);
-  height: 95%;
-  width: 75%;
-  margin-left: 0%;
+  height: 90%;
+  width: 95%;
   gap: 10%;
   place-items: center;
+  justify-content: stretch;
+  justify-items: center;
 }
 
 .aboutyou {
@@ -245,6 +238,9 @@ ul.language li {
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-image: url(images/Frame@2x.png);
+  background-position: absolute;
+  background-size: auto;
   border-color: #172b4d;
   width: 100%;
   justify-content: center;
@@ -263,7 +259,7 @@ ul.language li {
 
 @media screen and (min-width: 768px){
   .form, .coment {
-    flex: 3
+    flex: 2
   }
 }
 
