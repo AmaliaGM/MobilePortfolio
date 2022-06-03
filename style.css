@@ -14,6 +14,7 @@ header {
 }
 
 body {
+  justify-content: center;
   background-attachment: fixed;
   background-color: white;
 }
@@ -21,9 +22,12 @@ body {
 .main {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  height: auto;
   background-image: url(images/header.png);
   background-size: cover;
   background-position: center;
+  background-clip:padding-box;
   padding-left: 10%;
   padding-right: 10%;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -118,6 +122,14 @@ body {
   justify-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .planholder {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+ 
+}
+
 .img {
   width: 90%;
   height: auto;
@@ -160,6 +172,8 @@ ul.language li {
 .resume {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  height: auto;
   background-image: url(images/aboutme.png);
   background-position: absolute;
   background-size: cover;
@@ -203,30 +217,6 @@ ul.language li {
   margin-bottom: 20px;
 }
 
-.aboutyou {
-  display: flex;
-  float: left;
-  flex-direction: column;
-  width: 80%;
-  text-align: center;
-  align-items: center;
-  padding: 10%;
-  justify-content: center;
-}
-
-.form {
-  display: inline-block;
-  clear: both;
-  text-align: left;
-  border-color: #172b4d;
-  width: 90%;
-  justify-content: center;
-  align-content: center;
-  justify-items: left;
-  padding: 10px 70px 40px 0;
-  padding-left: 10px;
-}
-
 .box1,
 .box2,
 .box3 {
@@ -237,6 +227,42 @@ ul.language li {
   margin-left: 0%;
   gap: 10%;
   place-items: center;
+}
+
+.aboutyou {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  text-align: center;
+  align-items: center;
+  padding: 10%;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-color: #172b4d;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  justify-items: left;
+  padding: 10px 70px 40px 0;
+  padding-left: 10px;
+  list-style: none;
+}
+
+@media screen and (min-width: 768px){
+  .aboutyou {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .form, .coment {
+    flex: 3
+  }
 }
 
 .touch {
