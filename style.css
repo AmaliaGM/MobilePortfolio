@@ -127,19 +127,23 @@ body {
 
 ul.language {
   width: 100%;
-  align-content: center;
+  align-content: stretch;
   justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 ul.language li {
   display: inline;
+  float: left;
   list-style-type: none;
   width: fit-content;
   justify-content: center;
   align-items: center;
+  margin-left: 5%;
+
 }
 
 .projects {
