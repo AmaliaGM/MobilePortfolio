@@ -27,7 +27,7 @@ body {
   background-image: url(images/header.png);
   background-size: cover;
   background-position: center;
-  background-clip:padding-box;
+  background-clip: padding-box;
   padding-left: 10%;
   padding-right: 10%;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -75,20 +75,11 @@ body {
   padding: 0;
 }
 
-.frame {
-  max-inline-size: 100%;
-  object-fit: cover;
-  block-size: auto;
-  width: 92.81px;
-  height: 132.37px;
-  top: 6225px;
-}
-
 .title {
   display: flex;
   flex-direction: column;
   font-family: 'Inter', 'Arial Narrow Bold', sans-serif;
-  font-size: 30px;
+  font-size: 100%;
   line-height: 52px;
   align-items: center;
   text-align: center;
@@ -114,8 +105,8 @@ body {
 .planholder {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
-  width: 100%;
-  height: 90%;
+  width: 97%;
+  height: auto;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -125,8 +116,10 @@ body {
 @media screen and (min-width: 768px) {
   .planholder {
     display: grid;
-    grid-template-columns: auto auto auto;
-  } 
+    grid-template-columns: 33% 33% 33%;
+    margin-right: 0;
+    justify-content: stretch;
+  }
 }
 
 .img {
@@ -153,6 +146,10 @@ ul.language li {
   align-items: center;
 }
 
+li:hover {
+  color: mediumseagreen;
+}
+
 .projects {
   display: inline-block;
   margin-top: 25px;
@@ -166,6 +163,11 @@ ul.language li {
   align-items: center;
   justify-items: center;
   align-content: center;
+  cursor:pointer;
+}
+
+.projects:hover {
+  background-color:#172b4d;
 }
 
 .resume {
@@ -176,6 +178,7 @@ ul.language li {
   background-image: url(images/aboutme.png);
   background-position: absolute;
   background-size: cover;
+  background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -214,6 +217,7 @@ ul.language li {
   color: #344563;
   align-items: center;
   margin-bottom: 20px;
+  padding-bottom: 5%;
 }
 
 .box1,
@@ -221,64 +225,93 @@ ul.language li {
 .box3 {
   display: grid;
   background-color: rgba(61, 60, 61, 0.282);
-  height: 95%;
-  width: 75%;
-  margin-left: 0%;
+  height: 90%;
+  width: 95%;
   gap: 10%;
   place-items: center;
+  justify-content: stretch;
+  justify-items: center;
 }
 
 .aboutyou {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  flex-grow: 1;
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutyou { 
+    width: 100%;
+    justify-content: space-between;
+  }  
+}
+
+.comment {
+  font-size: x-large;
+  width: fit-content;
+  padding: 5%;
+  margin: 0;
   text-align: center;
-  align-items: center;
-  padding: 10%;
-  justify-content: center;
 }
 
 .form {
-  display: flex;
+  display: block;
+  position: relative;
   flex-direction: column;
-  text-align: center;
-  border-color: #172b4d;
   width: 100%;
-  justify-content: center;
-  align-content: center;
-  justify-items: left;
-  padding: 10px 70px 40px 0;
-  padding-left: 10px;
   list-style: none;
+  padding: 1em;
+  margin: 0;
+  justify-content: center;
+  align-items: stretch;
+  justify-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  background: url(images/Frame@2x.png);
+  overflow: auto;
 }
 
-@media screen and (min-width: 768px){
+textarea {
+  font-family: 'Input', Arial, Helvetica, sans-serif;
+  color: slategray;
+}
+
+ul.form li {
+  padding: 10px 0px 0px 0px;
+  border-style: none;
+  width: 100%;
+  justify-content: center;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
   .aboutyou {
+    display: flex;
     flex-direction: row;
+    flex-shrink: 1;
   }
 }
 
-@media screen and (min-width: 768px){
-  .form, .coment {
-    flex: 3
+@media screen and (min-width: 768px) {
+  .coment {
+    font-size: medium;
+    width: fit-content;
+    text-align: justify;
+    width: 50%;
   }
 }
 
 .touch {
-  display: inline;
+  display: block;
   background-color: #36b37f;
   border: none;
   color: white;
-  padding: 5px 10px;
-  text-align: center;
-  font-size: 16px;
-  justify-items: center;
-  align-content: center;
-  border-radius: 6px;
-  margin-left: 10px;
+  padding: 3px 20px;
   margin-top: 10px;
-  cursor: pointer;
   justify-content: center;
+  width: 50%;
 }
 
 .icon {
@@ -297,4 +330,138 @@ ul.language li {
   justify-content: center;
   justify-items: center;
   margin-bottom: 30%;
+}
+
+.LoremIpsum {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width) {
+  .LoremIpsum {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 70%;
+  }
+}
+
+.snapshot {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: stretch;
+}
+
+div .phoneimg {
+  width: 100%;
+  height: auto;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+div .tabletimg {
+  width: 100%;
+  height: auto;
+  justify-content: stretch;
+  order: 1;
+}
+
+.keep {
+  display: flex;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 250%;
+  color: #172b4d;
+}
+
+@media screen and (min-width: 768px) {
+  .keep {
+    display: flex;
+    order: 2;
+    min-width: 50%;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div .phoneimg,
+  ul.language li.phone {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tabletimg,
+  ul.language li.tablet {
+    display: none;
+  }
+}
+
+.lorem {
+  display: flex;
+  text-align: justify;
+}
+
+.Live {
+  margin-top: 25px;
+  background-color: #36b37f;
+  background-image: url(images/LiveButton.png);
+  background-size: cover;
+  background-position: absolute;
+  background-repeat: no-repeat;
+  border: none;
+  color: white;
+  padding: 20px 65px;
+  text-align: center;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  cursor:pointer;
+}
+
+.Live:hover {
+  border-style: solid;
+  border-color:rgb(89, 153, 249);
+}
+
+.Source {
+  margin-top: 25px;
+  background-color: #36b37f;
+  background-image: url(images/SourceButton.png);
+  background-size: cover;
+  background-position: absolute;
+  background-repeat: no-repeat;
+  border: none;
+  color: white;
+  padding: 20px 65px;
+  text-align: center;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  cursor:pointer;
+}
+
+.Source:hover {
+  border-style: solid;
+  border-color:rgb(89, 153, 249);
+}
+
+@media screen and (min-width: 768px) {
+  .Live, .Source {
+    z-index: 20;
+    position: relative;
+  } 
 }
