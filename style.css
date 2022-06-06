@@ -21,31 +21,47 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  background-image: url(header-illsutration-mobile.png);
+  background-image: url(images/header.png);
   background-size: cover;
+  background-position: center;
   padding-left: 10%;
   padding-right: 10%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-h2 {
-  color: rgba(79, 197, 168, 0.722);
+.amalia {
+  width: 100%;
+  height: auto;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+  margin: 0;
+  padding: 0;
+}
+
+.developer {
+  color: #36b37f;
   font-size: xx-large;
 }
 
-p {
+.contact {
   font-size: medium;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .icons {
   display: flex;
-  padding: 20%;
-  gap: 10px;
+  padding: 5%;
+  gap: 5px;
   justify-content: space-around;
-  max-width: 200px;
   align-items: baseline;
 }
 
@@ -53,4 +69,207 @@ p {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.frame {
+  max-inline-size: 100%;
+  object-fit: cover;
+  block-size: auto;
+  width: 92.81px;
+  height: 132.37px;
+  top: 6225px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  color: #172b4d;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.descript {
+  display: grid;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 32px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: #3a4a42;
+  padding: 16px;
+}
+
+.planholder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.img {
+  width: 90%;
+  height: auto;
+  margin-top: 10px;
+  align-items: center;
+}
+
+ul.language {
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+ul.language li {
+  display: inline;
+  list-style-type: none;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects {
+  display: inline-block;
+  margin-top: 25px;
+  background-color: #36b37f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/aboutme.png);
+  background-position: absolute;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.me {
+  width: 100%;
+  height: auto;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  align-items: center;
+  text-align: center;
+  color: #172b4d;
+  font-size: 40px;
+}
+
+.help {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 15%;
+  text-align: center;
+  color: #344563;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.aboutyou {
+  display: flex;
+  float: left;
+  flex-direction: column;
+  width: 80%;
+  text-align: center;
+  align-items: center;
+  padding: 10%;
+  justify-content: center;
+}
+
+.form {
+  display: inline-block;
+  clear: both;
+  text-align: left;
+  border-color: #172b4d;
+  width: 90%;
+  justify-content: center;
+  align-content: center;
+  justify-items: left;
+  padding: 10px 70px 40px 0;
+  padding-left: 10px;
+}
+
+.box1,
+.box2,
+.box3 {
+  display: grid;
+  background-color: rgba(61, 60, 61, 0.282);
+  height: 95%;
+  width: 75%;
+  margin-left: 0%;
+  gap: 10%;
+  place-items: center;
+}
+
+.touch {
+  display: inline;
+  background-color: #36b37f;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 16px;
+  justify-items: center;
+  align-content: center;
+  border-radius: 6px;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: baseline;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 10%;
+  border-radius: 50%;
+}
+
+.mail {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 30%;
 }
