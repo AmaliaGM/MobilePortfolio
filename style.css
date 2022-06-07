@@ -351,30 +351,30 @@ ul.language li {
   height: auto;
 }
 
-  .snapshot {
-    display: flex;
-    justify-content: stretch;
-  }
+.snapshot {
+  display: flex;
+  justify-content: stretch;
+}
 
-  div .phoneimg {
-    width: max-content;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-  }
+div .phoneimg {
+  width: max-content;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
 
-  div .tabletimg {
-    width: max-content;
-    height: auto;
-    justify-content: center;
-  }
+div .tabletimg {
+  width: max-content;
+  height: auto;
+  justify-content: center;
+}
 
-  .wrap {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    width: 90%;
-  }
+.wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 90%;
+}
 
 .keep {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -438,12 +438,6 @@ ul.language li {
   float: right;
 }
 
-.Live:hover, .Live:hover {
-  display: block;
-  border-style: solid;
-  border-color: rgb(89, 153, 249);
-}
-
 .Live1 {
   display: block;
   flex-direction: column;
@@ -464,6 +458,13 @@ ul.language li {
   justify-items: center;
   align-content: center;
   cursor: pointer;
+}
+
+.Live:hover,
+.Live1:hover {
+  display: block;
+  border-style: solid;
+  border-color: rgb(89, 153, 249);
 }
 
 .Source {
@@ -489,11 +490,6 @@ ul.language li {
   float: right;
 }
 
-.Source:hover, .Source1:hover {
-  border-style: solid;
-  border-color: rgb(89, 153, 249);
-}
-
 .Source1 {
   display: block;
   flex-direction: column;
@@ -514,6 +510,12 @@ ul.language li {
   justify-items: center;
   align-content: center;
   cursor: pointer;
+}
+
+.Source:hover,
+.Source1:hover {
+  border-style: solid;
+  border-color: rgb(89, 153, 249);
 }
 
 @media screen and (min-width: 768px) {
