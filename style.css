@@ -51,6 +51,7 @@ body {
   background-size: 90%;
   background-position: top;
   background-clip: padding-box;
+  background-repeat: no-repeat;
   padding-left: 10%;
   padding-right: 10%;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -211,13 +212,13 @@ ul.language li {
   flex-direction: column;
   max-width: 100%;
   height: auto;
-  background-image: url(images/aboutme.png);
-  background-position: absolute;
-  background-size: cover;
-  background-repeat: no-repeat;
   align-items: center;
-  justify-content: center;
   text-align: center;
+  background: url(images/aboutme.png) no-repeat,
+  url(images/aboutright.png) no-repeat;
+  background-size: auto, 50%;
+  background-position: left 200%, right;
+
 }
 
 .me {
@@ -232,14 +233,15 @@ ul.language li {
 }
 
 .help {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
   color: #42526e;
+  text-align: center;
 }
 
 .skills {
