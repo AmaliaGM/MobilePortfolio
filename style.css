@@ -17,6 +17,7 @@ body {
   justify-content: center;
   background-attachment: fixed;
   background-color: white;
+  margin: 0;
 }
 
 .main {
@@ -170,6 +171,10 @@ li:hover {
   background-color:#172b4d;
 }
 
+.AboutMeHeader > div {
+  margin: 0;
+}
+
 .resume {
   display: flex;
   flex-direction: column;
@@ -239,6 +244,15 @@ li:hover {
   flex-grow: 1;
   width: 100%;
   justify-content: space-between;
+  align-items: center;
+  background: url(images/illustration-contact-form.png);
+  background-size: 20%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.aboutyou-title {
+  font-family: 'Input', sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -265,10 +279,6 @@ li:hover {
   align-items: flex-start;
   text-align: center;
   box-sizing: 100%;
-  background: url(images/Frame@2x.png);
-  background-size: cover;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
   padding: 10px 0px 10px 0px;
   border-style: none;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -277,7 +287,9 @@ li:hover {
 .textarea {
   font-family: 'Input', Arial, Helvetica, sans-serif;
   color: slategray;
-  width: 100%;
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
