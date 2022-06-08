@@ -135,8 +135,8 @@ ul.language {
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin: 0;
   padding-top: 3%;
+  padding-left: 0;
 }
 
 li:hover {
@@ -347,51 +347,40 @@ ul.language li {
   display: flex;
   flex-direction: column;
   margin-left: 5%;
-  width: 100%;
+  width: 95%;
   height: auto;
 }
 
-@media screen and (min-width: 768px) {
-  .LoremIpsum {
-    display: flex;
-  }
-
   .snapshot {
     display: flex;
-    margin: 0;
-    padding: 0;
     justify-content: stretch;
   }
 
   div .phoneimg {
-    width: 100%;
+    width: max-content;
     height: auto;
-    align-items: stretch;
-    justify-content: stretch;
+    align-items: center;
+    justify-content: center;
   }
 
   div .tabletimg {
-    width: 100%;
+    width: max-content;
     height: auto;
     justify-content: center;
-    order: 0;
   }
 
   .wrap {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    width: 90%;
   }
-}
 
 .keep {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 250%;
   color: #172b4d;
-  margin-right: 0%;
-  margin-bottom: 0%;
-  margin-left: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -419,12 +408,12 @@ ul.language li {
   display: flex;
   text-align: justify;
   justify-content: space-around;
+  width: 90%;
 }
 
 .button,
 .button1 {
-  display: block;
-  flex-grow: 1;
+  display: flex;
   margin-top: 7%;
 }
 
@@ -449,14 +438,14 @@ ul.language li {
   float: right;
 }
 
-.Live:hover {
+.Live:hover, .Live:hover {
   display: block;
   border-style: solid;
   border-color: rgb(89, 153, 249);
 }
 
 .Live1 {
-  display: inline-flex;
+  display: block;
   flex-direction: column;
   margin: 1%;
   margin-top: 25px;
@@ -475,11 +464,6 @@ ul.language li {
   justify-items: center;
   align-content: center;
   cursor: pointer;
-}
-
-.Live1:hover {
-  border-style: solid;
-  border-color: rgb(89, 153, 249);
 }
 
 .Source {
@@ -505,13 +489,13 @@ ul.language li {
   float: right;
 }
 
-.Source:hover {
+.Source:hover, .Source1:hover {
   border-style: solid;
   border-color: rgb(89, 153, 249);
 }
 
 .Source1 {
-  display: inline-flex;
+  display: block;
   flex-direction: column;
   margin: 1%;
   margin-top: 25px;
@@ -532,11 +516,6 @@ ul.language li {
   cursor: pointer;
 }
 
-.Source1:hover {
-  border-style: solid;
-  border-color: rgb(89, 153, 249);
-}
-
 @media screen and (min-width: 768px) {
   .Live,
   .Source {
@@ -554,6 +533,7 @@ ul.language li {
   .Live1,
   .Source1 {
     display: flex;
+    flex-direction: row;
   }
 
   .Live,
