@@ -100,7 +100,7 @@ body {
   gap: 5px;
   justify-content: center;
   align-items: baseline;
-} 
+}
 
 .icons li {
   list-style: none;
@@ -380,8 +380,8 @@ ul.language li {
 }
 
 @keyframes icon {
-  50% {transform:
-  rotate(180deg);
+  50% {
+    transform: rotate(180deg);
   }
 }
 
