@@ -489,7 +489,7 @@ ul.language {
 }
 
 .Source {
-  display: inline-block;
+  display: block;
   flex-direction: column;
   margin-top: 25px;
   background-color: #36b37f;
