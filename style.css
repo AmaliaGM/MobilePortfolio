@@ -5,12 +5,34 @@ header {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .navbar1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: none;
+  } 
+}
+
 .welcome {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   text-align: left;
+}
+
+.navbar1 {
+  display:flex;
+  justify-content: space-between;
+}
+
+.n1 {
+  justify-content: space-around;
+  padding: 5%;
 }
 
 body {
@@ -26,8 +48,8 @@ body {
   max-width: 100%;
   height: auto;
   background-image: url(images/header.png);
-  background-size: cover;
-  background-position: center;
+  background-size: 90%;
+  background-position: top;
   background-clip: padding-box;
   padding-left: 10%;
   padding-right: 10%;
@@ -35,6 +57,15 @@ body {
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    background-clip: border-box;
+    background-size: 90%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
 }
 
 .amalia {
@@ -66,14 +97,14 @@ body {
   display: flex;
   padding: 5%;
   gap: 5px;
-  justify-content: space-around;
+  justify-content: center;
   align-items: baseline;
 }
 
 .icons li {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 2%;
 }
 
 .title {
@@ -125,7 +156,7 @@ body {
 
 .img {
   width: 90%;
-  height: auto;
+  height: 50%;
   margin-top: 10px;
   align-items: center;
 }
@@ -341,6 +372,13 @@ ul.language li {
   justify-content: center;
   justify-items: center;
   margin-bottom: 30%;
+}
+
+@media screen and (min-width: 768px) {
+  .mail {
+    display: none;
+  }
+  
 }
 
 .LoremIpsum {
