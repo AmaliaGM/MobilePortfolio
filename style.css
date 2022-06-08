@@ -257,40 +257,41 @@ li:hover {
 }
 
 .form {
-  display: block;
-  position: relative;
-  flex-direction: column;
-  width: 100%;
-  list-style: none;
+  display:flex;
+  width: 90%;
   padding: 1em;
-  margin: 0;
   justify-content: center;
-  align-items: stretch;
   justify-items: center;
+  align-items: flex-start;
   text-align: center;
-  box-sizing: border-box;
+  box-sizing: 100%;
   background: url(images/Frame@2x.png);
-  overflow: auto;
+  background-size: cover;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 10px 0px 10px 0px;
+  border-style: none;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
-textarea {
+.textarea {
   font-family: 'Input', Arial, Helvetica, sans-serif;
   color: slategray;
-}
-
-ul.form li {
-  padding: 10px 0px 0px 0px;
-  border-style: none;
   width: 100%;
-  justify-content: center;
-  font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
   .aboutyou {
     display: flex;
     flex-direction: row;
-    flex-shrink: 1;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    flex-grow: 1;
+    
   }
 }
 
@@ -340,19 +341,10 @@ ul.form li {
   height: auto;
 }
 
-@media screen and (min-width) {
+@media screen and (min-width: 768px) {
   .LoremIpsum {
     display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
   }
-
-  .wrap {
-    display: flex;
-    flex-wrap: wrap;
-    max-height: 70%;
-  }
-}
 
 .snapshot {
   display: flex;
@@ -371,25 +363,37 @@ div .phoneimg {
 div .tabletimg {
   width: 100%;
   height: auto;
-  justify-content: stretch;
-  order: 1;
+  justify-content: center;
+  order: 0;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
 }
 
 .keep {
-  display: flex;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 250%;
   color: #172b4d;
+  margin-right: 0%;
+  margin-bottom: 0%;
+  margin-left: 0;
+
 }
 
 @media screen and (min-width: 768px) {
   .keep {
     display: flex;
-    order: 2;
-    min-width: 50%;
-    flex-grow: 1;
+    width: 60%;
   }
+}
+
+ul.language {
+  padding-top: 3%
 }
 
 @media screen and (min-width: 768px) {
@@ -409,12 +413,48 @@ div .tabletimg {
 .lorem {
   display: flex;
   text-align: justify;
+  justify-content: space-around;
+}
+
+.button, .button1 {
+  display: block;
+  flex-grow: 1;
+  margin-top: 7%;
 }
 
 .Live {
+  display: block;
   margin-top: 25px;
   background-color: #36b37f;
-  background-image: url(images/LiveButton.png);
+  background-image: url(images/Live.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  color: white;
+  padding: 20px 65px;
+  text-align: center;
+  font-size: 16px;
+  justify-content: right;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  cursor:pointer;
+  margin: 1%;
+  float: right;
+}
+
+.Live:hover {
+  display: block;
+  border-style: solid;
+  border-color:rgb(89, 153, 249);
+}
+
+.Live1 {
+  display:inline-flex;
+  flex-direction: column;
+  margin-top: 25px;
+  background-color: #36b37f;
+  background-image: url(images/Live.png);
   background-size: cover;
   background-position: absolute;
   background-repeat: no-repeat;
@@ -423,22 +463,25 @@ div .tabletimg {
   padding: 20px 65px;
   text-align: center;
   font-size: 16px;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   justify-items: center;
   align-content: center;
   cursor:pointer;
+  margin: 1%;
 }
 
-.Live:hover {
+.Live1:hover {
   border-style: solid;
   border-color:rgb(89, 153, 249);
 }
 
 .Source {
+  display: inline-block;
+  flex-direction: column;
   margin-top: 25px;
   background-color: #36b37f;
-  background-image: url(images/SourceButton.png);
+  background-image: url(images/Source.png);
   background-size: cover;
   background-position: absolute;
   background-repeat: no-repeat;
@@ -452,6 +495,8 @@ div .tabletimg {
   justify-items: center;
   align-content: center;
   cursor:pointer;
+  margin: 1%;
+  float: right;
 }
 
 .Source:hover {
@@ -459,9 +504,51 @@ div .tabletimg {
   border-color:rgb(89, 153, 249);
 }
 
+
+.Source1 {
+  display:inline-flex;
+  flex-direction: column;
+  margin-top: 25px;
+  background-color: #36b37f;
+  background-image: url(images/Source.png);
+  background-size: cover;
+  background-position: absolute;
+  background-repeat: no-repeat;
+  border: none;
+  color: white;
+  padding: 20px 65px;
+  text-align: center;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  cursor:pointer;
+  margin: 1%;
+}
+
+.Source1:hover {
+  border-style: solid;
+  border-color:rgb(89, 153, 249);
+}
+
 @media screen and (min-width: 768px) {
   .Live, .Source {
-    z-index: 20;
-    position: relative;
+    float: right;
+    flex: 1;
   } 
+
+  .Live1, .Source1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Live1, .Source1 {
+    display: flex
+  }
+   
+  .Live, .Source {
+    display: none;
+  }
 }
