@@ -14,7 +14,7 @@ header {
 @media screen and (min-width: 768px) {
   .navbar {
     display: none;
-  } 
+  }
 }
 
 .welcome {
@@ -26,7 +26,7 @@ header {
 }
 
 .navbar1 {
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -214,11 +214,11 @@ ul.language li {
   height: auto;
   align-items: center;
   text-align: center;
-  background: url(images/aboutme.png) no-repeat,
-  url(images/aboutright.png) no-repeat;
+  background:
+    url(images/aboutme.png) no-repeat,
+    url(images/aboutright.png) no-repeat;
   background-size: auto, 50%;
   background-position: left 200%, right;
-
 }
 
 .me {
@@ -380,7 +380,6 @@ ul.language li {
   .mail {
     display: none;
   }
-  
 }
 
 .LoremIpsum {
