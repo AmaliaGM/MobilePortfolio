@@ -117,7 +117,6 @@ body {
   flex-direction: column;
   font-family: 'Inter', 'Arial Narrow Bold', sans-serif;
   font-size: 100%;
-  
   align-items: center;
   text-align: center;
   color: #172b4d;
@@ -133,23 +132,23 @@ body {
 .div {
   border-style: solid;
   border-width: 0.2mm;
-  border-color:slategray;
+  border-color: slategray;
   width: 95%;
   height: 97%;
-  align-items:center;
-  justify-items:flex-end;
+  align-items: center;
+  justify-items: stretch;
   justify-content: center;
 }
 
 .descript {
-  display: inline-flex;
+  display: flex;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 16px;
+  padding: 10%;
 }
 
 .planholder {
@@ -158,7 +157,7 @@ body {
   width: 97%;
   height: auto;
   justify-content: center;
-  align-items:stretch;
+  align-items: stretch;
   align-content: center;
   justify-items: center;
 }
@@ -176,7 +175,7 @@ body {
   width: 100%;
   height: 50%;
   align-items: center;
-  margin:0;
+  margin: 0;
 }
 
 ul.language {
@@ -184,7 +183,7 @@ ul.language {
   flex-wrap: wrap;
   flex-grow: 1;
   width: 100%;
-  height:6%;
+  height: 6%;
   align-content: center;
   justify-content: space-evenly;
   align-items: baseline;
@@ -198,7 +197,6 @@ ul.language {
 a.button1 {
   display: inline-block;
   width: 100%;
-  height: 100%;
   font-size: 80%;
   height: min-content;
   justify-content: center;
@@ -222,7 +220,7 @@ a.button1 {
   background-color: #36b37f;
   border: none;
   color: white;
-  padding: 13px 32px;
+  padding: 13px 20px;
   text-align: center;
   font-size: 16px;
   justify-content: center;
@@ -230,7 +228,6 @@ a.button1 {
   justify-items: center;
   align-content: center;
   cursor: pointer;
-  border-radius: 10%;
 }
 
 .projects:hover {
@@ -289,7 +286,6 @@ a.button1 {
   color: #344563;
   align-items: center;
   margin-bottom: 20px;
-  padding-bottom: 5%;
 }
 
 .box1,
@@ -303,17 +299,17 @@ a.button1 {
   justify-items: center;
   border-style: solid;
   border-width: 2px;
-  border-color:rgb(187, 195, 204);
+  border-color: rgb(187, 195, 204);
   align-items: center;
-  margin-top: 5%;
-  margin-left: 5%;
+  margin: 5%;
+  margin-left: 15%;
 }
 
 ul.buttons {
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   list-style-type: none;
   width: 95%;
@@ -327,18 +323,17 @@ ul.buttons {
 a.button {
   display: inline-block;
   border-radius: 10px;
-  color:#36b37f;
+  color: #36b37f;
   background-color: white;
   padding: 15px 5px;
   text-align: center;
   font-size: 90%;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
-  
   justify-content: center;
   align-items: center;
   margin: 2px;
   margin-bottom: 10px;
- }
+}
 
 .aboutyou {
   width: 100%;
@@ -353,7 +348,6 @@ a.button {
 .aboutyou-title {
   font-family: 'Input', sans-serif;
   font-size: 100%;
-
 }
 
 @media screen and (min-width: 768px) {
@@ -405,13 +399,12 @@ a.button {
     display: flex;
     flex-direction: row;
     background-size: 10%;
-    
   }
 
   .form {
     align-items: left;
     width: 50%;
-    position:50% 50%;
+    position: 50% 50%;
     margin-left: auto;
     padding-right: 10%;
   }
@@ -420,7 +413,8 @@ a.button {
     font-size: medium;
     text-align: justify;
     width: 30%;
-    margin: 5%
+    margin: 5%;
+    padding: 10%;
   }
 }
 
@@ -526,4 +520,3 @@ div .tabletimg {
   justify-content: space-around;
   width: 90%;
 }
-
