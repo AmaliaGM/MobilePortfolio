@@ -36,10 +36,11 @@ header {
 }
 
 body {
-  justify-content: center;
+  justify-content: space-evenly;
   background-attachment: fixed;
   background-color: white;
   margin: 0;
+  align-content: stretch;
 }
 
 .main {
@@ -113,7 +114,7 @@ body {
   flex-direction: column;
   font-family: 'Inter', 'Arial Narrow Bold', sans-serif;
   font-size: 100%;
-  line-height: 52px;
+  
   align-items: center;
   text-align: center;
   color: #172b4d;
@@ -122,16 +123,25 @@ body {
   justify-content: center;
 }
 
+.div {
+  border-style: solid;
+  border-width: 0.2mm;
+  border-color:slategray;
+  width: 95%;
+  height: 97%;
+  align-items:baseline;
+  justify-items: baseline;
+  justify-content: center;
+}
+
 .descript {
-  display: grid;
+  display: inline-flex;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 100%;
-  line-height: 32px;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
   align-items: center;
-  color: #3a4a42;
   padding: 16px;
 }
 
@@ -141,7 +151,7 @@ body {
   width: 97%;
   height: auto;
   justify-content: center;
-  align-items: center;
+  align-items:stretch;
   align-content: center;
   justify-items: center;
 }
@@ -151,49 +161,57 @@ body {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     margin-right: 0;
-    justify-content: stretch;
+    justify-content: space-between;
   }
 }
 
 .img {
-  width: 90%;
+  width: 100%;
   height: 50%;
-  margin-top: 10px;
   align-items: center;
+  margin:0;
 }
 
 ul.language {
   display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
   width: 100%;
+  height:6%;
   align-content: center;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3%;
+  justify-content: space-evenly;
+  align-items: baseline;
   padding-left: 0;
   border-style: none;
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 
-li:hover {
+a.button1 {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 80%;
+  height: min-content;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+  color: black;
+  padding: 3px 5px;
+  background-color: rgb(219, 214, 214);
+  margin-bottom: 4px;
+  margin-left: 0%;
+}
+
+.button1:hover {
   border-style: none;
   color: mediumseagreen;
 }
 
-a.button1 {
-  display: inline;
-  width: fit-content;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 10%;
-  margin: 10px;
-  color: black;
-  padding: 10px 15px;
-  background-color: rgb(219, 214, 214);
-}
-
 .projects {
   display: inline-block;
-  margin-top: 25px;
+
   background-color: #36b37f;
   border: none;
   color: white;
@@ -270,38 +288,45 @@ a.button1 {
 .box1,
 .box2,
 .box3 {
-  display: inline-block;
+  display: block;
   background-color: rgba(61, 60, 61, 0.282);
-  height: 90%;
+  height: auto;
   width: 95%;
-  gap: 10%;
   place-items: center;
   justify-items: center;
   border-style: solid;
+  border-width: 2px;
   border-color:rgb(125, 132, 139);
   border-radius: 5%;
 }
 
-.buttons {
+ul.buttons {
   display: flex;
-  flex-direction: column;
-  max-width: 100%;
-  height: auto;
-  justify-items: baseline;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content:center;
+  align-items: center;
+  list-style-type: none;
+  width: 95%;
+  height: 100%;
+  margin-top: auto;
+  margin-right: 0;
+  padding: 0;
 }
 
-.button {
-  display: inline-flex;
+a.button {
+  display: inline-block;
   border-radius: 10px;
   color:#36b37f;
   background-color: white;
-  padding: 6% 7%;
+  padding: 15px 5px;
   text-align: center;
   font-size: 90%;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
-  margin: 5px;
-  justify-content: baseline;
-  align-items: baseline;
+  
+  justify-content: center;
+  align-items: center;
+  margin: 2px
  }
 
 .aboutyou {
@@ -309,7 +334,7 @@ a.button1 {
   flex-direction: column;
   flex-grow: 1;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   background: url(images/illustration-contact-form.png);
   background-size: 20%;
@@ -319,27 +344,36 @@ a.button1 {
 
 .aboutyou-title {
   font-family: 'Input', sans-serif;
+  font-size: 100%;
+
 }
 
 @media screen and (min-width: 768px) {
   .aboutyou {
-    width: 100%;
+    width: 300%;
     justify-content: space-between;
   }
 }
 
 .comment {
-  font-size: x-large;
+  font-size: large;
   width: fit-content;
   padding: 5%;
   margin: 0;
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .comment {
+    text-align: justify;
+  }
+  
+}
+
 .form {
   display: flex;
   width: 90%;
-  justify-content: center;
+  justify-content: stretch;
   justify-items: center;
   align-items: flex-start;
   text-align: center;
