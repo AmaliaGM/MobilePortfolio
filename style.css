@@ -293,7 +293,7 @@ a.button1 {
 .box2,
 .box3 {
   display: block;
-  background-color: rgba(61, 60, 61, 0.282);
+  background-color: #ebf0ee;
   height: auto;
   width: 95%;
   place-items: center;
@@ -412,7 +412,7 @@ a.button {
     padding-top: 5%;
     padding-bottom: 5%;
     align-items: center;
-    color: #172B4D;
+    color: #172b4d;
     font-size: 30px;
     font-weight: 700;
     line-height: 52px;
