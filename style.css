@@ -324,6 +324,14 @@ ul.language li {
   margin-bottom: 15px;
 }
 
+.textarea::placeholder {
+  transition: transform 0.1s linear;
+}
+
+.textarea:hover::placeholder {
+  transform: translateX(5px);
+}
+
 @media screen and (min-width: 768px) {
   .aboutyou {
     display: flex;
