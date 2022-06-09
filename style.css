@@ -131,8 +131,9 @@ body {
 
 .div {
   border-style: solid;
-  border-width: 0.2mm;
-  border-color: slategray;
+  border-width: 1px;
+  border-color: #d0d9d4;
+  border-radius: 10px;
   width: 95%;
   height: 97%;
   align-items: center;
@@ -298,8 +299,9 @@ a.button1 {
   place-items: center;
   justify-items: center;
   border-style: solid;
-  border-width: 2px;
-  border-color: rgb(187, 195, 204);
+  border-width: 1px;
+  border-color: #d0d9d4;
+  border-radius: 10px;
   align-items: center;
   margin: 5%;
   margin-left: 15%;
@@ -418,31 +420,31 @@ a.button {
 }
 
 .touch {
-    display: inline-block;
-    margin: 5%;
-    background-color: #36b37f;
-    border: none;
-    color: white;
-    padding: 13px 20px;
-    text-align: center;
-    font-size: 16px;
-    justify-content: left;
-    align-items: left;
-    justify-items: center;
-    align-content: center;
-    cursor: pointer;
-  }
-  
-  .touch:hover {
-    background-color:#3166c2;
-  }
+  display: inline-block;
+  margin: 5%;
+  background-color: #36b37f;
+  border: none;
+  color: white;
+  padding: 13px 20px;
+  text-align: center;
+  font-size: 16px;
+  justify-content: left;
+  align-items: left;
+  justify-items: center;
+  align-content: center;
+  cursor: pointer;
+}
 
-  @media screen and (min-width: 768px) {
-    .touch {
-      margin-left: -35%;
-    }
-    
+.touch:hover {
+  background-color: #3166c2;
+}
+
+@media screen and (min-width: 768px) {
+  .touch {
+    margin-left: -35%;
   }
+}
+
 .icon {
   display: inline-flex;
   align-items: baseline;
@@ -539,5 +541,4 @@ div .tabletimg {
   .icons {
     margin-bottom: 0;
   }
-  
 }
