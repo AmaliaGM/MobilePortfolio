@@ -419,30 +419,27 @@ a.button {
   }
 }
 
+.form1 {
+  text-align: left;
+}
+
 .touch {
   display: inline-block;
-  margin: 5%;
   background-color: #36b37f;
   border: none;
   color: white;
   padding: 13px 20px;
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   justify-content: left;
   align-items: left;
-  justify-items: center;
-  align-content: center;
+  justify-items: left;
+  align-content: left;
   cursor: pointer;
 }
 
 .touch:hover {
   background-color: #3166c2;
-}
-
-@media screen and (min-width: 768px) {
-  .touch {
-    margin-left: -35%;
-  }
 }
 
 .icon {
