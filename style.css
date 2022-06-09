@@ -406,16 +406,16 @@ a.button {
   .aboutyou-title {
     display: flex;
     margin-left: 20%;
-    margin-bottom: 35%;
+    margin-bottom: 20%;
     text-align: justify;
-    width: 80%;
+    width: 70%;
     padding-top: 5%;
     padding-bottom: 5%;
     align-items: center;
     color: #172b4d;
     font-size: 30px;
     font-weight: 700;
-    line-height: 52px;
+    line-height: 45px;
   }
 
   .form {
