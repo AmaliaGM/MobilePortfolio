@@ -49,7 +49,7 @@ body {
   max-width: 100%;
   height: auto;
   background-image: url(images/header.png);
-  background-size: 90%;
+  background-size: 100%;
   background-position: top;
   background-clip: padding-box;
   background-repeat: no-repeat;
@@ -401,6 +401,21 @@ a.button {
     display: flex;
     flex-direction: row;
     background-size: 10%;
+  }
+
+  .aboutyou-title {
+    display: flex;
+    margin-left: 20%;
+    margin-bottom: 35%;
+    text-align: justify;
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    align-items: center;
+    color: #172B4D;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 52px;
   }
 
   .form {
