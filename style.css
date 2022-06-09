@@ -163,24 +163,32 @@ body {
 }
 
 ul.language {
+  display: flex;
   width: 100%;
   align-content: center;
   justify-content: center;
   align-items: center;
   padding-top: 3%;
   padding-left: 0;
+  border-style: none;
+  list-style: none;
 }
 
 li:hover {
+  border-style: none;
   color: mediumseagreen;
 }
 
-ul.language li {
+a.button1 {
   display: inline;
-  list-style-type: none;
   width: fit-content;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  border-radius: 10%;
+  margin: 10px;
+  color: black;
+  padding: 10px 15px;
+  background-color: rgb(219, 214, 214);
 }
 
 .projects {
@@ -197,6 +205,7 @@ ul.language li {
   justify-items: center;
   align-content: center;
   cursor: pointer;
+  border-radius: 10%;
 }
 
 .projects:hover {
@@ -261,15 +270,39 @@ ul.language li {
 .box1,
 .box2,
 .box3 {
-  display: grid;
+  display: inline-block;
   background-color: rgba(61, 60, 61, 0.282);
   height: 90%;
   width: 95%;
   gap: 10%;
   place-items: center;
-  justify-content: stretch;
   justify-items: center;
+  border-style: solid;
+  border-color:rgb(125, 132, 139);
+  border-radius: 5%;
 }
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
+  justify-items: baseline;
+}
+
+.button {
+  display: inline-flex;
+  border-radius: 10px;
+  color:#36b37f;
+  background-color: white;
+  padding: 6% 7%;
+  text-align: center;
+  font-size: 90%;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  margin: 5px;
+  justify-content: baseline;
+  align-items: baseline;
+ }
 
 .aboutyou {
   display: flex;
@@ -458,135 +491,3 @@ div .tabletimg {
   width: 90%;
 }
 
-.button,
-.button1 {
-  display: flex;
-  margin-top: 7%;
-}
-
-.Live {
-  display: block;
-  margin: 1%;
-  margin-top: 25px;
-  background-color: #36b37f;
-  background-image: url(images/Live.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: none;
-  color: white;
-  padding: 20px 65px;
-  text-align: center;
-  font-size: 16px;
-  justify-content: right;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-  cursor: pointer;
-  float: right;
-}
-
-.Live1 {
-  display: block;
-  flex-direction: column;
-  margin: 1%;
-  margin-top: 25px;
-  background-color: #36b37f;
-  background-image: url(images/Live.png);
-  background-size: cover;
-  background-position: absolute;
-  background-repeat: no-repeat;
-  border: none;
-  color: white;
-  padding: 20px 65px;
-  text-align: center;
-  font-size: 16px;
-  justify-content: right;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-  cursor: pointer;
-}
-
-.Live:hover,
-.Live1:hover {
-  display: block;
-  border-style: solid;
-  border-color: rgb(89, 153, 249);
-}
-
-.Source {
-  display: block;
-  flex-direction: column;
-  margin: 1%;
-  margin-top: 25px;
-  background-color: #36b37f;
-  background-image: url(images/Source.png);
-  background-size: cover;
-  background-position: absolute;
-  background-repeat: no-repeat;
-  border: none;
-  color: white;
-  padding: 20px 65px;
-  text-align: center;
-  font-size: 16px;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-  cursor: pointer;
-  float: right;
-}
-
-.Source1 {
-  display: block;
-  flex-direction: column;
-  margin: 1%;
-  margin-top: 25px;
-  background-color: #36b37f;
-  background-image: url(images/Source.png);
-  background-size: cover;
-  background-position: absolute;
-  background-repeat: no-repeat;
-  border: none;
-  color: white;
-  padding: 20px 65px;
-  text-align: center;
-  font-size: 16px;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-  cursor: pointer;
-}
-
-.Source:hover,
-.Source1:hover {
-  border-style: solid;
-  border-color: rgb(89, 153, 249);
-}
-
-@media screen and (min-width: 768px) {
-  .Live,
-  .Source {
-    float: right;
-    flex: 1;
-  }
-
-  .Live1,
-  .Source1 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .Live1,
-  .Source1 {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .Live,
-  .Source {
-    display: none;
-  }
-}
