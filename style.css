@@ -465,6 +465,13 @@ a.button {
   justify-content: center;
   margin-top: 10%;
   border-radius: 50%;
+  animation: icon 5s infinite;
+}
+
+@keyframes icon {
+  50% {
+    transform: rotate(180deg);
+  }
 }
 
 .mail {
