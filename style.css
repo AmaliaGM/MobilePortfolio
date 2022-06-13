@@ -409,6 +409,10 @@ a.button {
   transform: translateX(5px);
 }
 
+.form1 {
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .aboutyou {
     display: flex;
