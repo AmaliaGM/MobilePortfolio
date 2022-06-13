@@ -445,10 +445,10 @@ a.button {
     margin: 5%;
     padding: 10%;
   }
-}
 
-.form1 {
-  text-align: left;
+  .form1 {
+    text-align: left;
+  }
 }
 
 .touch {
