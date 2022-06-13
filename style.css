@@ -84,6 +84,12 @@ body {
   padding: 0;
 }
 
+.amalia:hover {
+  transform: 
+  perspective(500px)
+  translate3d(10px, 0, 100px);
+}
+
 .developer {
   color: #36b37f;
   font-size: xx-large;
@@ -110,6 +116,13 @@ body {
   margin: 0;
   padding: 2%;
   margin-bottom: 10%;
+}
+
+
+.icons li:hover {
+  transform: 
+  perspective(500px)
+  translate3d(5px, 0, 50px);
 }
 
 .title {
@@ -208,11 +221,12 @@ a.button1 {
   background-color: rgb(219, 214, 214);
   margin-bottom: 4px;
   margin-left: 0%;
+  cursor: pointer;
 }
 
 .button1:hover {
   border-style: none;
-  color: mediumseagreen;
+  background-color:rgb(173, 228, 225);
 }
 
 .projects {
@@ -406,7 +420,7 @@ a.button {
   .aboutyou-title {
     display: flex;
     margin-left: 20%;
-    margin-bottom: 35%;
+    margin-bottom: 20%;
     text-align: justify;
     width: 80%;
     padding-top: 5%;
@@ -416,6 +430,7 @@ a.button {
     font-size: 30px;
     font-weight: 700;
     line-height: 52px;
+    line-height: 50px;
   }
 
   .form {
