@@ -85,9 +85,9 @@ body {
 }
 
 .amalia:hover {
-  transform: 
-  perspective(500px)
-  translate3d(10px, 0, 100px);
+  transform:
+    perspective(500px)
+    translate3d(10px, 0, 100px);
 }
 
 .developer {
@@ -118,11 +118,10 @@ body {
   margin-bottom: 10%;
 }
 
-
 .icons li:hover {
-  transform: 
-  perspective(500px)
-  translate3d(5px, 0, 50px);
+  transform:
+    perspective(500px)
+    translate3d(5px, 0, 50px);
 }
 
 .title {
@@ -226,7 +225,7 @@ a.button1 {
 
 .button1:hover {
   border-style: none;
-  background-color:rgb(173, 228, 225);
+  background-color: rgb(173, 228, 225);
 }
 
 .projects {
@@ -422,15 +421,14 @@ a.button {
     margin-left: 20%;
     margin-bottom: 20%;
     text-align: justify;
-    width: 80%;
+    width: 70%;
     padding-top: 5%;
     padding-bottom: 5%;
     align-items: center;
     color: #172b4d;
     font-size: 30px;
     font-weight: 700;
-    line-height: 52px;
-    line-height: 50px;
+    line-height: 45px;
   }
 
   .form {
