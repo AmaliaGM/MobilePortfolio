@@ -1,7 +1,7 @@
 # MobilePortfolio
 Personal portfolio project for Microverse course (Module 1)
 
-[[index](https://amaliagm.github.io/MobilePortfolio/)]
+[[webpage](https://amaliagm.github.io/MobilePortfolio/)]
 
 The aim of this project is to learn to understand how to parse a Figma design, use flexbox to place elements in the page, build a personal portfolio site.
 
