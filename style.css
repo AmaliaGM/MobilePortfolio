@@ -231,7 +231,7 @@ a.button1 {
 .projects {
   display: inline-block;
   margin: 5%;
-  background-color: #36b37f;
+  background-color: #25815b;
   border: none;
   color: white;
   padding: 13px 20px;
@@ -338,7 +338,7 @@ ul.buttons {
 a.button {
   display: inline-block;
   border-radius: 10px;
-  color: #36b37f;
+  color: #25815b;
   background-color: white;
   padding: 15px 5px;
   text-align: center;
@@ -395,7 +395,7 @@ a.button {
 
 .textarea {
   font-family: 'Input', Arial, Helvetica, sans-serif;
-  color: slategray;
+  color: #647281;
   width: 80%;
   padding: 10px;
   margin-bottom: 15px;
@@ -457,7 +457,7 @@ a.button {
 
 .touch {
   display: inline-block;
-  background-color: #36b37f;
+  background-color: #25815b;
   border: none;
   color: white;
   padding: 13px 20px;
@@ -482,7 +482,7 @@ a.button {
   justify-content: center;
   margin-top: 10%;
   border-radius: 50%;
-  animation: icon 5s infinite;
+  animation: icon 5s 3;
 }
 
 @keyframes icon {
