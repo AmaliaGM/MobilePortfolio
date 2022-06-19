@@ -30,10 +30,9 @@ a.nav-link {
   align-items: center;
   width: 90%;
   margin: auto;
-  display: flex;
 }
 
-.nav-menu {
+#nav-menu.active {
   display: inline-block;
   position: relative;
   justify-content: space-between;
@@ -68,7 +67,6 @@ a.nav-link {
 
 .bar {
   display: block;
-  
   width: 25px;
   height: 3px;
   margin: 5px auto;
@@ -77,6 +75,12 @@ a.nav-link {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 00.3s ease-in-out;
   color: white
+}
+
+button.hamb {
+  border-style: none;
+  background-color: hsl(0, 38%, 97%);
+  cursor: pointer;
 }
 
 .welcome {
