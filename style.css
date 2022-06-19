@@ -90,7 +90,7 @@ a.nav-link {
 
 button.hamb {
   border-style: none;
-  background-color: hsl(0, 38%, 97%);
+  background-color: transparent;
   cursor: pointer;
 }
 
