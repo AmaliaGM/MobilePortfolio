@@ -7,7 +7,7 @@ hamburguer.addEventListener("click", () => {
     hamburguer.classList.toggle("active");
     menu.classList.toggle("active");
     welcome.classList.toggle("inactive");
-    body.classList.toggle("stopscroll");
+    //body.classList.toggle("stopscroll");
 })
 
 // document.querySelectAll(".nav-link").forEach(n => m.addEventListener("click", () => {
@@ -18,10 +18,10 @@ hamburguer.addEventListener("click", () => {
 
 // ---------------
 
-const navLink = document.querySelector(".nav-link");
+const navLink = document.querySelector(".nav-item");
 
-navLink.addEventListener("click", () => {
-    body.classList.remove("stopscroll");
+hamburguer.addEventListener("click", () => {
+    body.classList.toggle("stopscroll");
 });
 
 
