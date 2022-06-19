@@ -91,6 +91,10 @@ button.hamb {
   text-align: left;
 }
 
+.inactive {
+  display: none;
+}
+
 .navbar1 {
   display: flex;
   justify-content: space-between;
