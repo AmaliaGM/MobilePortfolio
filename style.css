@@ -3,6 +3,78 @@ header {
   padding: 5% 5% 2% 5%;
   justify-content: space-between;
   align-items: center;
+  color: #262626;
+}
+
+li.nav-item {
+  list-style: none;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+}
+
+a.nav-link {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+.show {display:block}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: inline-block;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  left: -100%;
+  gap: 0;
+  text-align: center;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.hamburguer {
+  display: block;
+  cursor: pointer;
+  animation: transform 1s; 
+}
+
+.hamburguer.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguer.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+} 
+
+.hamburguer.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar {
+  display: block;
+  
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  color: black;
+  background-color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 00.3s ease-in-out;
+  color: white
 }
 
 .welcome {
@@ -34,6 +106,15 @@ header {
     display: none;
   }
 }
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 body {
   justify-content: space-evenly;
@@ -93,6 +174,7 @@ body {
 .developer {
   color: #36b37f;
   font-size: xx-large;
+  text-align: center;
 }
 
 .contact {
