@@ -1,4 +1,4 @@
-.stopscroll{
+.stopscroll {
   overflow: hidden;
 }
 
@@ -27,7 +27,7 @@ a.nav-link {
   text-decoration: none;
 }
 
-.show {display:block}
+.show { display: block; }
 
 .navbar {
   min-height: 70px;
@@ -41,6 +41,7 @@ a.nav-link {
 #nav-menu {
   display: none;
 }
+
 #nav-menu.active {
   display: block;
   width: 100vw;
@@ -53,6 +54,7 @@ a.nav-link {
   background-color: white;
   text-align: left;
 }
+
 .nav-link {
   transition: 0.7s ease;
 }
@@ -60,7 +62,18 @@ a.nav-link {
 .hamburguer {
   display: block;
   cursor: pointer;
-  animation: transform 1s; 
+  animation: transform 1s;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 00.3s ease-in-out;
+  color: white;
 }
 
 .hamburguer.active .bar:nth-child(2) {
@@ -69,22 +82,10 @@ a.nav-link {
 
 .hamburguer.active .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
-} 
+}
 
 .hamburguer.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  color: black;
-  background-color: black;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 00.3s ease-in-out;
-  color: white
 }
 
 button.hamb {
