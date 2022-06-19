@@ -28,7 +28,9 @@ a.nav-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  width: 90%;
+  margin: auto;
+  display: flex;
 }
 
 .nav-menu {
@@ -106,15 +108,6 @@ a.nav-link {
     display: none;
   }
 }
-
-.navbar {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 
 body {
   justify-content: space-evenly;
