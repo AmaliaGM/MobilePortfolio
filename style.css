@@ -1,6 +1,5 @@
-body{
+.stopscroll{
   overflow: hidden;
-  height: 100%;
 }
 
 header {

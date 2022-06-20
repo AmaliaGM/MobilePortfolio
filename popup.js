@@ -10,8 +10,18 @@ hamburguer.addEventListener("click", () => {
     body.classList.toggle("stopscroll");
 })
 
-document.querySelectAll(".nav-link").forEach(n => m.addEventListener("click", () => {
-    hamburguer.classList.remove("active");
-    menu.classList.remove("active");
+// document.querySelectAll(".nav-link").forEach(n => m.addEventListener("click", () => {
+//     hamburguer.classList.remove("active");
+//     menu.classList.remove("active");
+//     body.classList.remove("stopscroll");
+// })) 
+
+// ---------------
+
+const navLink = document.querySelector(".nav-link");
+
+navLink.addEventListener("click", () => {
     body.classList.remove("stopscroll");
-})) 
+});
+
+
