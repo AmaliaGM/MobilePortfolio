@@ -1,8 +1,97 @@
+.stopscroll {
+  overflow: hidden;
+}
+
 header {
   display: flex;
   padding: 5% 5% 2% 5%;
   justify-content: space-between;
   align-items: center;
+  color: #262626;
+}
+
+li.nav-item {
+  list-style: none;
+  min-width: 160px;
+  z-index: 1;
+  padding: 20px;
+  font-size: 32px;
+  height: 44px;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+a.nav-link {
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+.show { display: block; }
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+#nav-menu {
+  display: none;
+}
+
+#nav-menu.active {
+  display: block;
+  width: 100vw;
+  height: 90vh;
+  margin: 0;
+  padding: 20px 0 0 0;
+  position: absolute;
+  left: 0;
+  top: 70px;
+  background-color: white;
+  text-align: left;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.hamburguer {
+  display: block;
+  cursor: pointer;
+  animation: transform 1s;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 00.3s ease-in-out;
+  color: white;
+}
+
+.hamburguer.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguer.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburguer.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+button.hamb {
+  border-style: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .welcome {
@@ -11,6 +100,10 @@ header {
   font-weight: 600;
   font-size: 20px;
   text-align: left;
+}
+
+.inactive {
+  display: none;
 }
 
 .navbar1 {
@@ -93,6 +186,7 @@ body {
 .developer {
   color: #36b37f;
   font-size: xx-large;
+  text-align: center;
 }
 
 .contact {

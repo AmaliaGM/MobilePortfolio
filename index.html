@@ -4,14 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter?query=inter">      
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter?query=inter">   
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter?query=5.7.0/css/font-awesome.min.css">     
+    <script defer src="popup.js"></script>
 </head>
 <body>
-    <header class="navbar">
+    <header>
+        <nav class="navbar">
         <a class="welcome">Welcome</a>
-        <nav><img class="menu" alt="button" src="images/Enabled.png" ></nav>
+        <div class="hamburguer">
+            <button class="hamb">        
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            
+            <ul id="nav-menu">
+            <li class="nav-item"><a class="nav-link" href="#title">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#me">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#form">Contact</a></li>
+            </ul></button>
+        </div>
+        </a>
+        </nav>
     </header>
     <section class="main">
         <header class="navbar1">
@@ -37,7 +53,7 @@
      <br>
      <br>
      <br>
-    <header class="title">
+    <header id="title" class="title">
         <div><a href="title"><img src="images/Disabled.png" alt="scroll down button"></a></div>
         <div><h1>My recent Work</h1></div>
         <div><img src="images/indicator.png" alt="indicator"></div>
@@ -116,7 +132,7 @@
             </section>
             <section class="AboutMeHeader">
                 <div class="resume">
-                <h3 class="me">About me</h3>
+                <h3 id="me" class="me">About me</h3>
                 <p class="help">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                    don’t hestiate to contact me.</p>
                 <button class="projects" type="button">Get My Resume</button>
@@ -169,7 +185,7 @@
             <br>
             <div class="aboutyou">
                 <div class="comment"><p class="aboutyou-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p></div>
-                <div class="form"><form class="form1" action="https://formspree.io/f/mbjwboje" method="post">
+                <div id="form" class="form"><form class="form1" action="https://formspree.io/f/mbjwboje" method="post">
                     <input class="textarea" type="text" placeholder="name" maxlength="30" required>
                     <input class="textarea" type="email" placeholder="email" required>
                     <textarea class="textarea" name="mdr_message" id="message" cols="50" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
