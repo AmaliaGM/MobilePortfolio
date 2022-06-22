@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter?query=inter">   
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter?query=5.7.0/css/font-awesome.min.css">     
     <script defer src="popup.js"></script>
+    <script src="cards.js"></script>
 </head>
 <body>
     <header>
@@ -42,13 +43,13 @@
         <p class="contact"> I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
             don’t hestiate to contact me.</p>
             
-    <ul class="icons">
+        <ul class="icons">
         <li><a href="www.twitter.com"><img src="images/twitter.png" alt="twitter"></a></li>
         <li><a href="www.linkedin.com"><img src="images/Linkedin.png" alt="Linkedin"></a></li>
         <li><a href="#"><img src="images/medium.png" alt="medium"></a></li>
         <li><a href="#"><img src="images/github.png" alt="github"></a></li>
         <li><a href="#"><img src="images/angellist.png" alt="angellist"></a></li>    
-    </ul>  
+        </ul>  
     </section>
      <br>
      <br>
@@ -58,7 +59,9 @@
         <div><h1>My recent Work</h1></div>
         <div><img src="images/indicator.png" alt="indicator"></div>
     </header>
-    <section class="descript">
+    <div id="append">
+    </div>
+    <!--<section class="descript">
         <div class="planholder">
             <div class="div">
                 <img class="img" src="images/plan.png" alt="planholder">
@@ -71,6 +74,7 @@
                 </ul>
                 <button class="projects" type="button">See project</button>
             </div>
+            
             <div class="div">
                 <img class="img" src="images/plan.png" alt="planholder">
                 <h2 class="subtitle">Multi-Post Stories Gain+Glory</h2>
@@ -129,33 +133,32 @@
                 <button class="projects" type="button">See project</button>
             </div>
         </div>
-            </section>
-            <section class="AboutMeHeader">
-                <div class="resume">
-                <h3 id="me" class="me">About me</h3>
-                <p class="help">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+</section>
+<section class="AboutMeHeader">
+    <div class="resume">
+        <h3 id="me" class="me">About me</h3>
+        <p class="help">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
                    don’t hestiate to contact me.</p>
-                <button class="projects" type="button">Get My Resume</button>
-                </div>
-                <br>
-                <div class="planholder">
-                    <div class="box1">
-                        <div class="skills">
-                            <img src="images/icon-languages.svg" alt="icon languages" class="icon">
-                            <h2 class="skills">Languages</h2>
-                            <ul class="buttons">
-                            
-                            <li><a class="button">JavaScript</a></li>
-                            <li><a class="button">Ruby</a></li>
-                            <li><a class="button">HTML</a></li>
-                            <li><a class="button">CSS</a></li>
-                        </ul>
-                        </div>
-                    </div>
-                    <div class="box2">
-                        <div class="skills">
-                            <img src="images/icon-frameworks.svg" alt="icon Frameworks" class="icon">
-                            <h2 class="skills">Frameworks</h2>
+        <button class="projects" type="button">Get My Resume</button>
+    </div>-->
+    <br>
+    <div class="planholder">
+        <div class="box1">
+            <div class="skills">
+                <img src="images/icon-languages.svg" alt="icon languages" class="icon">
+                <h2 class="skills">Languages</h2>
+                <ul class="buttons">                   
+                    <li><a class="button">JavaScript</a></li>
+                    <li><a class="button">Ruby</a></li>
+                    <li><a class="button">HTML</a></li>
+                    <li><a class="button">CSS</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="skills">
+                <img src="images/icon-frameworks.svg" alt="icon Frameworks" class="icon">
+                <h2 class="skills">Frameworks</h2>
                             
                             <ul class="buttons">
                             <li><a class="button">Bootstrap</a></li>
@@ -187,7 +190,7 @@
                 <div class="comment"><p class="aboutyou-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p></div>
                 <div id="form" class="form"><form class="form1" action="https://formspree.io/f/mbjwboje" method="post">
                     <input class="textarea" type="text" placeholder="name" maxlength="30" required>
-                    <input class="textarea" type="email" placeholder="email" required>
+                    <input class="textarea email" type="email" placeholder="email" required>
                     <textarea class="textarea" name="mdr_message" id="message" cols="50" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
                    <button class="touch" type="submit">Get in touch
                         </button>
@@ -208,5 +211,38 @@
                 <a class="mail" href="mariaamaliagomezmoro@gmail.com">mariaamaliagomezmoro@gmail.com</a>
             </div>
             </footer>        
+        <section class="popup1">
+            <img class="mobile img" src="images/Snapshoot.png" alt="">
+            <img class="desktop img" src="images/Snapshootbig.png" alt="medical illustration sets">
+            <div class="pop">
+            <h2 class="popup1-title">Keeping track of hundreds of components</h2>
+            <div class="desktop see">
+                <a><img src="images/Live.png" alt="See live button"></a>
+                <a><img src="images/Source.png" alt="See source button"></a>
+            </div></div>
+            <div class="mobile">
+            <ul class="languages">
+                <li><a class="button1">Ruby on rails</a></li>
+                <li><a class="button1">css</a></li>
+                <li><a class="button1">Java Script</a></li>
+            </ul>
+            </div>
+            <div class="desktop">
+            <ul class="languages">
+                <li><a class="button1">Codekit</a></li>
+                <li><a class="button1">GitHub</a></li>
+                <li><a class="button1">Javasript</a></li>
+                <li><a class="button1">Bootstrap</a></li>
+                <li><a class="button1">Terminal</a></li>
+                <li><a class="button1">Codepen</a></li>
+            </ul>
+            </div>
+            <p class="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+            <div class="mobile see">
+                <a><img src="images/Live.png" alt="See live button"></a>
+                <a><img src="images/Source.png" alt="See source button"></a>
+            </div>
+            
+        </section>
         </body>
 </html>

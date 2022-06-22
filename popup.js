@@ -7,7 +7,7 @@ hamburguer.addEventListener("click", () => {
     hamburguer.classList.toggle("active");
     menu.classList.toggle("active");
     welcome.classList.toggle("inactive");
-})
+});
 
 const navLink = document.querySelector(".nav-item");
 
@@ -16,3 +16,13 @@ hamburguer.addEventListener("click", () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById(".touch").addEventListener('submit', formValidation);
+
+});
+function formValidation(event) {
+    event.preventDefault();
+    var mail = document.getElementsByClassName('.textarea.email').value;
+    console.log(mail.toLocaleLowerCase());
+     
+}

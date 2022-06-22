@@ -672,3 +672,77 @@ div .tabletimg {
     margin-bottom: 0;
   }
 }
+/*-----------------------------*/
+.popup1 {
+  display: none;
+}
+
+.popup1.active {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.popup1-title {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-top: 0%;
+}
+
+@media screen and (min-width: 768px) {
+  .pop {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 27px;
+  }
+  
+  .popup1-title {
+    display: flex;
+    width: 60%
+  }
+
+  .desktop.see {
+    display: flex;
+    flex-direction: row-reverse; 
+    margin-top: 0;
+  }
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 100%;
+  height: 6%;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding-left: 0;
+  border-style: none;
+  list-style: none;
+  margin-top: 0;
+}
+
+ul.languages li.button1 {
+  margin-right: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }  
+}
+
+.lorem {
+  text-align: justify;
+  margin: auto;
+}
