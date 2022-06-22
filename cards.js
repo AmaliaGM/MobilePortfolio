@@ -1,11 +1,3 @@
-  /*let header = document.getElementsByClassName("title");
-  let newSubtitle = document.createElement("h2");
-  newSubtitle.innerText = "My Recent Work";
-  header.appendChild(newSubtitle);*/
-
-
-  //ul list
-
   const cards= [
     { 
       image: 'images/plan.png',
@@ -75,7 +67,7 @@
   newLink4.innerText = "html";
 
   let button = document.createElement('button');
-  button.classList = "projects";
+  button.classList = "projects popupBtn";
   button.innerText = "See Project"
   div.appendChild(button);
 
@@ -83,31 +75,3 @@
   append.appendChild(sectionD);
   }
 });
-
-
-  
-  
-  
-  
-  
-
-
-
-/*let append = document.getElementById("append");
-for (let i = 0; i<6; i++) {
-  let card= `
-  <div class="div">
-                <img class="img" src="${cards[0].image}" alt="planholder">
-                <h2 class="subtitle">${cards[0].heading}</h2></h2>
-                <ul class="language">
-                    <li><a class="button1">${cards[0].badge1}</a></li>
-                    <li><a class="button1">${cards[0].badge2}</a></li>
-                    <li><a class="button1">${cards[0].badge3}</a></li>
-                    <li><a class="button1">${cards[0].badge4}</a></li>
-                </ul>
-                <button class="projects" type="button">See project</button>
-            </div>
-  `
-  //document.getElementById("append").innerHTML += card
-  
-}*/

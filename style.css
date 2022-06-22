@@ -675,11 +675,14 @@ div .tabletimg {
 /*-----------------------------*/
 .popup1 {
   display: none;
+  width: 80vw;
+  height: 90vh;
+  margin: auto;
+  background-color: #fff;
 }
 
 .popup1.active {
-  margin-left: 5%;
-  margin-right: 5%;
+  display: block;
 }
 
 .popup1-title {
@@ -691,6 +694,7 @@ div .tabletimg {
   color: #172b4d;
   margin-top: 0%;
 }
+
 
 @media screen and (min-width: 768px) {
   .pop {

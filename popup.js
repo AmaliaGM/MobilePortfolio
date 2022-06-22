@@ -15,14 +15,27 @@ hamburguer.addEventListener("click", () => {
     body.classList.toggle("stopscroll");
 });
 
+// details pop up
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById(".touch").addEventListener('submit', formValidation);
-
+const seeProject = document.querySelectorAll('.projects .popupBtn');
+const popup1 = document.querySelector('.popup1')
+seeProject.addEventListener("click", () => {
+    popup1.classList.add('active');
 });
-function formValidation(event) {
-    event.preventDefault();
-    var mail = document.getElementsByClassName('.textarea.email').value;
-    console.log(mail.toLocaleLowerCase());
+
+
+
+
+
+
+// form validation
+// document.addEventListener("DOMContentLoaded", function() {
+//     document.getElementById(".touch").addEventListener('submit', formValidation);
+
+// });
+// function formValidation(event) {
+//     event.preventDefault();
+//     var mail = document.getElementsByClassName('.textarea.email').value;
+//     console.log(mail.toLocaleLowerCase());
      
-}
+// }
