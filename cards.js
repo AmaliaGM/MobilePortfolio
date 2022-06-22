@@ -66,13 +66,18 @@
   newLink3.classList = 'button1';
   newLink4.classList = 'button1';
   newItem1.appendChild(newLink1);
-  newItem1.appendChild(newLink2);
-  newItem1.appendChild(newLink3);
-  newItem1.appendChild(newLink4);
+  newItem2.appendChild(newLink2);
+  newItem3.appendChild(newLink3);
+  newItem4.appendChild(newLink4);
   newLink1.innerText = "Ruby on Rails";
   newLink2.innerText = "css";
   newLink3.innerText = "Java Script";
   newLink4.innerText = "html";
+
+  let button = document.createElement('button');
+  button.classList = "projects";
+  button.innerText = "See Project"
+  div.appendChild(button);
 
   let append = document.getElementById("append");
   append.appendChild(sectionD);
