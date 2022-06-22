@@ -17,8 +17,9 @@ hamburguer.addEventListener("click", () => {
 
 // details pop up
 
-const seeProject = document.querySelectorAll('.projects .popupBtn');
-const popup1 = document.querySelector('.popup1')
+const seeProject = document.querySelector('#popupBtn');
+const popup1 = document.querySelector('.popup1');
+
 seeProject.addEventListener("click", () => {
     popup1.classList.add('active');
 });
