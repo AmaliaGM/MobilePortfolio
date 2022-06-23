@@ -27,7 +27,9 @@ a.nav-link {
   text-decoration: none;
 }
 
-.show { display: block; }
+.show {
+  display: block;
+}
 
 .navbar {
   min-height: 70px;
@@ -179,8 +181,7 @@ body {
 
 .amalia:hover {
   transform:
-    perspective(500px)
-    translate3d(10px, 0, 100px);
+    perspective(500px) translate3d(10px, 0, 100px);
 }
 
 .developer {
@@ -214,8 +215,7 @@ body {
 
 .icons li:hover {
   transform:
-    perspective(500px)
-    translate3d(5px, 0, 50px);
+    perspective(500px) translate3d(5px, 0, 50px);
 }
 
 .title {
@@ -342,7 +342,7 @@ a.button1 {
   background-color: #3166c2;
 }
 
-.AboutMeHeader > div {
+.AboutMeHeader>div {
   margin: 0;
 }
 
@@ -647,6 +647,7 @@ div .tabletimg {
 }
 
 @media screen and (min-width: 768px) {
+
   div .phoneimg,
   ul.language li.phone {
     display: none;
@@ -654,6 +655,7 @@ div .tabletimg {
 }
 
 @media screen and (max-width: 767px) {
+
   .tabletimg,
   ul.language li.tablet {
     display: none;
@@ -672,6 +674,7 @@ div .tabletimg {
     margin-bottom: 0;
   }
 }
+
 /*-----------------------------*/
 .popup1 {
   display: none;
@@ -702,13 +705,13 @@ div .tabletimg {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .pop {
     display: flex;
     justify-content: space-between;
     margin-top: 27px;
   }
-  
+
   .popup1-title {
     display: flex;
     width: 60%
@@ -716,7 +719,7 @@ div .tabletimg {
 
   .desktop.see {
     display: flex;
-    flex-direction: row-reverse; 
+    flex-direction: row-reverse;
     margin-top: 0;
   }
 }
@@ -746,10 +749,10 @@ ul.languages li.button1 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .mobile {
     display: none;
-  }  
+  }
 }
 
 .lorem {

@@ -15,15 +15,7 @@ hamburguer.addEventListener("click", () => {
     body.classList.toggle("stopscroll");
 });
 
-// details pop up
-/*const project = document.querySelectorAll(".projects.button");
-const popUpMenu = document.querySelector(".popup1");
 
-// project.addEventListener("click", () => {
-    project.classList.toggle("active");
-    popUpMenu.classList.toggle("active");
-    
-});*/
 
 
 // form validation
