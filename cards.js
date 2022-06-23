@@ -68,8 +68,7 @@ newLink3.innerText = "Java Script";
 newLink4.innerText = "html";
 
 let button = document.createElement('button');
-button.classList = "projects";
-button.id = "popupBtn";
+button.classList = "projects button";
 button.innerText = "See Project"
 div.appendChild(button);
 

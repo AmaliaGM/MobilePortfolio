@@ -687,7 +687,7 @@ div .tabletimg {
   backdrop-filter: blur(3px);
 }
 
-.popup1 .active {
+.popup1.active {
   display: block;
 }
 
