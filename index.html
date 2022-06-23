@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter?query=inter">   
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter?query=5.7.0/css/font-awesome.min.css">     
-    <script src="cards.js"></script>
-    <script src="popUp.js"></script>
-    <script src="profileMobileProject.js"></script>
+     
     
 </head>
 <body>
@@ -193,7 +191,7 @@
                 <div class="comment"><p class="aboutyou-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p></div>
                 <div id="form" class="form"><form class="form1" action="https://formspree.io/f/mbjwboje" method="post">
                     <input class="textarea" type="text" placeholder="name" maxlength="30" required>
-                    <input class="textarea email" type="email" placeholder="email" required>
+                    <input class="textarea email" type="email" placeholder="email" pattern="matchAll(/[a-z]:\\/)" required>
                     <textarea class="textarea" name="mdr_message" id="message" cols="50" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
                    <button class="touch" type="submit">Get in touch
                         </button>
@@ -247,6 +245,9 @@
             </div>
             
         </section>
-                
+        <script src="cards.js"></script>
+        <script src="popUp.js"></script>
+        <script src="profileMobileProject.js"></script>
+        
         </body>
 </html>

@@ -16,23 +16,30 @@ hamburguer.addEventListener("click", () => {
 });
 
 // details pop up
-const project = document.querySelectorAll(".projects.button");
+/*const project = document.querySelectorAll(".projects.button");
 const popUpMenu = document.querySelector(".popup1");
 
- project.addEventListener("click", () => {
+// project.addEventListener("click", () => {
     project.classList.toggle("active");
     popUpMenu.classList.toggle("active");
     
-});
+});*/
+
 
 // form validation
-// document.addEventListener("DOMContentLoaded", function() {
-//     document.getElementById(".touch").addEventListener('submit', formValidation);
 
-// });
-// function formValidation(event) {
-//     event.preventDefault();
-//     var mail = document.getElementsByClassName('.textarea.email').value;
-//     console.log(mail.toLocaleLowerCase());
-     
-// }
+function allLetter(inputtxt)
+  {
+    let letters = document.getElementsByClassName(".email")
+
+    letters = [a-z];
+   if(inputtxt.value.match(letters))
+     {
+      return true;
+     }
+   else
+     {
+     alert("Uuups.. try again!");
+     return false;
+     }
+  }

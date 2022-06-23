@@ -8,6 +8,15 @@ const cards= [
     badge4: 'HTML',
   }
 ];
+let append = document.getElementById("append");
+
+let sectionD = document.createElement("div");
+let planHolder = document.createElement("div");
+let div = document.createElement("div");
+
+let projects = document.createElement('button');
+projects.classList = "projects button";
+projects.innerText = "See Project"
 
  window.addEventListener ('load', (event) =>{
 
@@ -67,10 +76,10 @@ newLink2.innerText = "css";
 newLink3.innerText = "Java Script";
 newLink4.innerText = "html";
 
-let button = document.createElement('button');
-button.classList = "projects button";
-button.innerText = "See Project"
-div.appendChild(button);
+let projects = document.createElement('button');
+projects.classList = "projects button";
+projects.innerText = "See Project"
+div.appendChild(projects);
 
 let append = document.getElementById("append");
 append.appendChild(sectionD);
