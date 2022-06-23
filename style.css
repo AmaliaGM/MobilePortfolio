@@ -678,7 +678,7 @@ div .tabletimg {
   width: 80vw;
   height: 90vh;
   margin: auto;
-  background-color: rgb(77, 19, 19);
+  background-color: rgb(242, 231, 231);
   position: fixed;
   top: 0;
   left: 0;
@@ -687,7 +687,7 @@ div .tabletimg {
   backdrop-filter: blur(3px);
 }
 
-.popup1.active {
+.popup1 .active {
   display: block;
 }
 
