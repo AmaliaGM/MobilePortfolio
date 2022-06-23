@@ -13,14 +13,15 @@ const cards= [
 
   console.log("Page Loaded");
 
-for(let i=0; i<6; i++){  
-
 let sectionD = document.createElement("div");
 sectionD.classList = 'descript';
-  
+append.appendChild(sectionD);
+
 let planHolder = document.createElement("div");
 planHolder.classList = 'planholder';
 sectionD.appendChild(planHolder);
+
+for(let i=0; i<6; i++){  
 
 let div = document.createElement("div");
 planHolder.appendChild(div);
