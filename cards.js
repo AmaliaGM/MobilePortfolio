@@ -1,4 +1,3 @@
-/* eslint-disable imports/no-cycle */
 const cards = [
   {
     image: 'images/plan.png',
@@ -73,8 +72,8 @@ for (let i = 0; i < 6; i++) {
     append.classList.add('inactive');
   });
 
-  append.appendChild(sectionD)
-};
+  append.appendChild(sectionD);
+}
 
 // details pop up
 window.addEventListener('click', (e) => {
@@ -82,10 +81,9 @@ window.addEventListener('click', (e) => {
 });
 
 popUp.addEventListener('click', () => {
-popUp.classList.remove('active');
-append.classList.remove('inactive');  
+  popUp.classList.remove('active');
+  append.classList.remove('inactive');  
 });
-
 // window.addEventListener('click', (e) => {
 //   if (e.target === popUpBtn) {
 //     modalContainer.classList.remove('.popup1');
