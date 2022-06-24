@@ -1,18 +1,18 @@
-const hamburguer = document.querySelector(".hamburguer");
-const menu = document.querySelector("#nav-menu");
-const welcome = document.querySelector(".welcome");
+const hamburguer = document.querySelector('.hamburguer');
+const menu = document.querySelector('#nav-menu');
+const welcome = document.querySelector('.welcome');
 const body = document.body;
 
-hamburguer.addEventListener("click", () => {
-    hamburguer.classList.toggle("active");
-    menu.classList.toggle("active");
-    welcome.classList.toggle("inactive");
+hamburguer.addEventListener('click', () => {
+    hamburguer.classList.toggle('active');
+    menu.classList.toggle('active');
+    welcome.classList.toggle('inactive');
 });
 
-const navLink = document.querySelector(".nav-item");
+const navLink = document.querySelector('.nav-item');
 
-hamburguer.addEventListener("click", () => {
-    body.classList.toggle("stopscroll");
+hamburguer.addEventListener('click', () => {
+    body.classList.toggle('stopscroll');
 });
 
 
@@ -25,6 +25,6 @@ hamburguer.addEventListener("click", () => {
   email = Document.getElementById('#email');
   let letters = /^([a-z0-9_\.\-])+\@(([a-z0-9\-])+\.)+([a-z0-9])+$/;
         if (!letters.test(email)) {
-  alert("error: dir de correo" + email + "es incorrecta.");
+  alert('error: dir de correo' + email + 'es incorrecta.');
 }
 } */
