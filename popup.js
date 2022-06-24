@@ -22,7 +22,7 @@ popUpTitle.classList = 'popUp-title';
 popup1.appendChild(popUpTitle);
 
 const desktopSee = document.createElement('div');
-desktopSee.classList  = 'desktop see';
+desktopSee.classList = 'desktop see';
 popup1.appendChild(desktopSee);
 
 const aDesk = document.createElement('a');
@@ -34,11 +34,11 @@ aDesk.classList = 'dSeeSource';
 desktopSee.appendChild(aDesk);
 
 const imgDL = document.createElement('img');
-imgDL.src='images/Live.png';
+imgDL.src ='images/Live.png';
 aDesk.appendChild(imgDL);
 
-const imgDS = document.createElement('img');
-imgDL.src='images/Source.png';
+//const imgDS = document.createElement('img');
+imgDL.src ='images/Source.png';
 bDesk.appendChild(imgDL);
 
 const mobile = document.createElement('div');
@@ -59,23 +59,22 @@ const liLang3 = document.createElement('li');
 ulLang.appendChild(liLang3);
 
 const liLang1a = document.createElement('a');
-liLang1a.classList ='button1';
-liLang1a.innerText = 'Rubi on Rails'
+liLang1a.classList = 'button1';
+liLang1a.innerText = 'Rubi on Rails';
 liLang1.appendChild(liLang1a);
 
 const liLang2a = document.createElement('a');
-liLang2a.classList = 'button1'
-liLang2a.innerText = 'css'
+liLang2a.classList = 'button1';
+liLang2a.innerText = 'css';
 liLang2.appendChild(liLang2a);
 
 const liLang3a = document.createElement('a');
-liLang3a.classList = 'button1'
-liLang3a.innerText = 'Java Script'
+liLang3a.classList = 'button1';
+liLang3a.innerText = 'Java Script';
 liLang2.appendChild(liLang3a);
 
-
 const desktop = document.createElement('div');
-desktop.classList= 'desktop';
+desktop.classList = 'desktop';
 popup1.appendChild(desktop);
 
 const ulLang1Desk = document.createElement('ul');
@@ -83,33 +82,33 @@ ulLang1Desk.classList = 'languages';
 popup1.appendChild(ulLang1Desk);
 
 const liLang1D = document.createElement('li');
-liLang1D.classList = 'button1'
-liLang1D.innerText = 'Codekit'
+liLang1D.classList = 'button1';
+liLang1D.innerText = 'Codekit';
 ulLang.appendChild(liLang1D);
 
 const liLang2D = document.createElement('li');
-liLang2D.classList = 'button1'
-liLang2D.innerText = 'GitHub'
+liLang2D.classList = 'button1';
+liLang2D.innerText = 'GitHub';
 ulLang.appendChild(liLang2D);
 
 const liLang3D = document.createElement('li');
-liLang3D.classList = 'button1'
-liLang3D.innerText = 'Javascript'
+liLang3D.classList = 'button1';
+liLang3D.innerText = 'Javascript';
 ulLang.appendChild(liLang3D);
 
 const liLang4D = document.createElement('li');
-liLang4D.classList = 'button1'
-liLang4D.innerText = 'Bootstrap'
+liLang4D.classList = 'button1';
+liLang4D.innerText = 'Bootstrap';
 ulLang.appendChild(liLang1D);
 
 const liLang5D = document.createElement('li');
-liLang5D.classList = 'button1'
-liLang5D.innerText = 'Terminal'
+liLang5D.classList = 'button1';
+liLang5D.innerText = 'Terminal';
 ulLang.appendChild(liLang5D);
 
 const liLang6D = document.createElement('li');
-liLang6D.classList = 'button1'
-liLang6D.innerText = 'Codepen'
+liLang6D.classList = 'button1';
+liLang6D.innerText = 'Codepen';
 ulLang.appendChild(liLang6D);
 
 const loremIp = document.createElement('p');
@@ -133,5 +132,3 @@ const imgDeskSource = document.createElement('img');
 amobSee2.appendChild(imgDeskSource);
 
 document.body.appendChild(popup1);
-
-
