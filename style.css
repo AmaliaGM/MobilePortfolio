@@ -180,8 +180,7 @@ body {
 }
 
 .amalia:hover {
-  transform:
-    perspective(500px) translate3d(10px, 0, 100px);
+  transform: perspective(500px) translate3d(10px, 0, 100px);
 }
 
 .developer {
@@ -214,8 +213,7 @@ body {
 }
 
 .icons li:hover {
-  transform:
-    perspective(500px) translate3d(5px, 0, 50px);
+  transform: perspective(500px) translate3d(5px, 0, 50px);
 }
 
 .title {
@@ -255,7 +253,7 @@ body {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding: 10%;
+  padding: 2%;
 }
 
 .planholder {
@@ -303,7 +301,6 @@ ul.language {
 
 a.button1 {
   display: inline-block;
-  width: 100%;
   font-size: 80%;
   height: min-content;
   justify-content: center;
@@ -314,6 +311,7 @@ a.button1 {
   background-color: rgb(219, 214, 214);
   margin-bottom: 4px;
   margin-left: 0%;
+  gap: 2%;
   cursor: pointer;
 }
 
@@ -342,7 +340,7 @@ a.button1 {
   background-color: #3166c2;
 }
 
-.AboutMeHeader>div {
+.AboutMeHeader > div {
   margin: 0;
 }
 
@@ -474,7 +472,6 @@ a.button {
   width: 327px;
   line-height: 52px;
   font-weight: 700;
-
 }
 
 .form {
@@ -484,7 +481,6 @@ a.button {
   justify-items: center;
   align-items: flex-start;
   text-align: center;
-  box-sizing: 100%;
   padding: 10px 0 10px 0;
   border-style: none;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -520,9 +516,8 @@ a.button {
 
   .aboutyou-title {
     display: flex;
-    margin:auto;
+    margin: auto;
     text-align: left;
-    
     padding-top: 5%;
     padding-bottom: 5%;
     align-items: center;
@@ -530,19 +525,14 @@ a.button {
     font-size: 30px;
     font-weight: 700;
     line-height: 45px;
-    margin: auto;
   }
 
   .form {
-    align-items: left;
     width: 50%;
-    position: 50% 50%;
-    
   }
 
   .coment {
     font-size: medium;
-   
     width: 50%;
     margin: 0%;
     padding: 0%;
@@ -562,9 +552,7 @@ a.button {
   text-align: left;
   font-size: 16px;
   justify-content: left;
-  align-items: left;
   justify-items: left;
-  align-content: left;
   cursor: pointer;
 }
 
@@ -651,7 +639,6 @@ div .tabletimg {
 }
 
 @media screen and (min-width: 768px) {
-
   div .phoneimg,
   ul.language li.phone {
     display: none;
@@ -659,18 +646,18 @@ div .tabletimg {
 }
 
 @media screen and (max-width: 767px) {
-
   .tabletimg,
   ul.language li.tablet {
     display: none;
   }
 }
 
-.lorem {
+.loremText {
   display: flex;
   text-align: justify;
   justify-content: space-around;
   width: 90%;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -679,13 +666,12 @@ div .tabletimg {
   }
 }
 
-/*-----------------------------*/
+/* ----------------------------- */
 
 .popup1 {
   display: none;
   width: 80vw;
   height: 90vh;
-  margin: auto;
   background-color: #ffff;
   position: fixed;
   top: 0;
@@ -699,7 +685,7 @@ div .tabletimg {
 
 .popup1.active {
   display: block;
-  margin:auto;
+  margin: auto;
   justify-content: center;
   backdrop-filter: blur(20px);
 }
@@ -714,7 +700,6 @@ div .tabletimg {
   margin-top: 0%;
 }
 
-
 @media screen and (min-width: 769px) {
   .pop {
     display: flex;
@@ -724,7 +709,7 @@ div .tabletimg {
 
   .popup1-title {
     display: flex;
-    width: 60%
+    width: 60%;
   }
 
   .desktop.see {
@@ -765,7 +750,3 @@ ul.languages li.button1 {
   }
 }
 
-.lorem {
-  text-align: justify;
-  margin: auto;
-}
