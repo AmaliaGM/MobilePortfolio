@@ -32,9 +32,9 @@
     </header>
     <section class="main">
         <header class="navbar1">
-            <nav class="n1">Portfolio</nav>
-            <nav class="n1">About</nav>
-            <nav class="n1">Contact</nav>
+            <nav class="n1" href="#title">Portfolio</nav>
+            <nav class="n1" href="#me">About</nav>
+            <nav class="n1" href="#form">Contact</nav>
         </header>
         <br>
         <br>
@@ -57,7 +57,7 @@
     <header id="title" class="title">
         <div><a href="title"><img src="images/Disabled.png" alt="scroll down button"></a></div>
         <div><h1>My recent Work</h1></div>
-        <div><img src="images/indicator.png" alt="indicator"></div>
+        <div><img src="images/Indicator.png" alt="indicator"></div>
     </header>
     <div id="append">
     
@@ -192,7 +192,7 @@
                 <div id="form" class="form"><form class="form1" action="https://formspree.io/f/mbjwboje" method="post">
                     <input class="textarea" type="text" placeholder="name" maxlength="30" required>
                     <input id="email" class="textarea email" type="email" placeholder="email" required 
-                        aria-required="true" pattern="" title="lowercase letters">
+                        pattern="/^[abc]/" title="lowercase letters">
                     <textarea class="textarea" name="mdr_message" id="message" cols="50" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
                    <button class="touch" type="submit">Get in touch
                         </button>
@@ -214,8 +214,10 @@
             </div>
             </footer>        
         <section class="popup1">
+            <div class="images">
             <img class="mobile img" src="images/Snapshoot.png" alt="">
             <img class="desktop img" src="images/Snapshootbig.png" alt="medical illustration sets">
+            </div>
             <div class="pop">
             <h2 class="popup1-title">Keeping track of hundreds of components</h2>
             <div class="desktop see">

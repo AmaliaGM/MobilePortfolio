@@ -1,13 +1,17 @@
 let popup1 = document.createElement("section");
 popup1.classList = 'popup1';
 
+let popUpDiv = document.createElement("div");
+popUpDiv.classList = 'images';
+popup1.appendChild(popUpDiv);
+
 let imgPopM = document.createElement("img");
 imgPopM.classList = 'mobile img';
-popup1.appendChild(imgPopM);
+popUpDiv.appendChild(imgPopM);
 
 let imgPopD = document.createElement("img");
 imgPopD.classList = 'desktop img';
-popup1.appendChild(imgPopD);
+popUpDiv.appendChild(imgPopD);
 
 let popDiv = document.createElement("div");
 popDiv.classList = "pop";
@@ -130,3 +134,5 @@ let imgDeskSource = document.createElement("img");
 amobSee2.appendChild(imgDeskSource);
 
 document.body.appendChild(popup1);
+
+

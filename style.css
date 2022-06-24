@@ -468,7 +468,7 @@ a.button {
 
 .comment {
   font-size: large;
-  width: fit-content;
+ 
   padding: 3%;
   margin: 0;
   text-align: center;
@@ -512,28 +512,28 @@ a.button {
     display: flex;
     flex-direction: row;
     background-size: 10%;
+    justify-content: stretch;
   }
 
   .aboutyou-title {
     display: flex;
-    margin-left: 20%;
-    margin-bottom: 20%;
-    text-align: justify;
+    margin:auto;
+    text-align: left;
     width: 70%;
     padding-top: 5%;
     padding-bottom: 5%;
     align-items: center;
     color: #172b4d;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 45px;
   }
 
   .form {
     align-items: left;
-    width: 50%;
+    
     position: 50% 50%;
-    padding-right: 10%;
+    
   }
 
   .coment {
@@ -676,9 +676,6 @@ div .tabletimg {
 }
 
 /*-----------------------------*/
-.descript.inactive {
-  display:black;
-}
 
 .popup1 {
   display: none;
@@ -691,7 +688,7 @@ div .tabletimg {
   left: 0;
   right: 0;
   bottom: 0;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(20px);
   justify-content: center;
   margin: auto;
 }
@@ -700,7 +697,7 @@ div .tabletimg {
   display: block;
   margin:auto;
   justify-content: center;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(20px);
 }
 
 .popup1-title {

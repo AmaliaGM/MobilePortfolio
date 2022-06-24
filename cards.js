@@ -65,11 +65,13 @@ for (let i = 0; i < 6; i++) {
   newLink4.innerText = "html";
 
   let projects = document.createElement('button');
-  projects.id =  'popUpBtn'
   projects.classList = "projects";
   projects.innerText = "See Project";
   div.appendChild(projects);
-  
+  projects.addEventListener("click", () => {
+    popUp.classList.add("active");
+    append.classList.add("inactive");
+  });
 
   let append = document.getElementById("append");
   append.appendChild(sectionD);
@@ -80,14 +82,16 @@ window.addEventListener('click', (e) => {
   const idPopUpBtn = e.target.id;
 });
 
-const popUpBtn = document.querySelector('#popUpBtn');
-const popUp = document.querySelector(".popup1");
+  
+  const popUp = document.querySelector(".popup1");
+  let imgPopM = document.querySelector("mobile.img");
+  let imgPopD = document.querySelector("desktop.img");
 
-popUpBtn.addEventListener("click", () => {
-  popUp.classList.add("active");
-  sectionD.classList.add("inactive");
-});
-
+  
+  popUp.addEventListener("click", () => {
+    popUp.classList.remove("active");
+    append.classList.remove("inactive");  
+  });
 
 // window.addEventListener('click', (e) => {
 //   if (e.target === popUpBtn) {
