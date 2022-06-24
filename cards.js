@@ -75,17 +75,11 @@ for (let i = 0; i < 6; i++) {
   append.appendChild(sectionD);
 }
 
-// details pop up
 window.addEventListener('click', (e) => {
   const idPopUpBtn = e.target.id;
 });
 
 popUp.addEventListener('click', () => {
-popUp.classList.remove('active');
-append.classList.remove('inactive');  
+  popUp.classList.remove('active');
+  append.classList.remove('inactive');  
 });
-// window.addEventListener('click', (e) => {
-//   if (e.target === popUpBtn) {
-//     modalContainer.classList.remove('.popup1');
-//   }
-// });
