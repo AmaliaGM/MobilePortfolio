@@ -18,7 +18,7 @@ const planHolder = document.createElement('div');
 planHolder.classList = 'planholder';
 sectionD.appendChild(planHolder);
 
-for (let i = 0; i < 6; i++) {
+for (let i = 0; i < 6; i+= 1) {
   const div = document.createElement('div');
   div.classList = 'div';
   planHolder.appendChild(div);
@@ -75,10 +75,7 @@ for (let i = 0; i < 6; i++) {
   append.appendChild(sectionD);
 }
 
-window.addEventListener('click', (e) => {
-  const idPopUpBtn = e.target.id;
-});
-
+const popUp = document.querySelector('.popup1');
 popUp.addEventListener('click', () => {
   popUp.classList.remove('active');
   append.classList.remove('inactive');  
