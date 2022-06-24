@@ -21,8 +21,8 @@ sectionD.appendChild(planHolder);
 for (let i = 0; i < 6; i++) {
 
   let div = document.createElement("div");
-  planHolder.appendChild(div);
   div.classList = 'div';
+  planHolder.appendChild(div);
 
   let imgPH = document.createElement('img');
   imgPH.classList = 'img';
@@ -65,10 +65,11 @@ for (let i = 0; i < 6; i++) {
   newLink4.innerText = "html";
 
   let projects = document.createElement('button');
-  projects.id = `popUpBtn${i + 1}`
+  projects.id =  'popUpBtn'
   projects.classList = "projects";
   projects.innerText = "See Project";
   div.appendChild(projects);
+  
 
   let append = document.getElementById("append");
   append.appendChild(sectionD);
@@ -79,11 +80,12 @@ window.addEventListener('click', (e) => {
   const idPopUpBtn = e.target.id;
 });
 
-const popUpBtn = document.querySelector('#popUpBtn1');
+const popUpBtn = document.querySelector('#popUpBtn');
 const popUp = document.querySelector(".popup1");
 
 popUpBtn.addEventListener("click", () => {
   popUp.classList.add("active");
+  sectionD.classList.add("inactive");
 });
 
 

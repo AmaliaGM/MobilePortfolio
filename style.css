@@ -676,22 +676,31 @@ div .tabletimg {
 }
 
 /*-----------------------------*/
+.descript.inactive {
+  display:black;
+}
+
 .popup1 {
   display: none;
   width: 80vw;
   height: 90vh;
   margin: auto;
-  background-color: rgb(242, 231, 231);
+  background-color: #ffff;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   backdrop-filter: blur(3px);
+  justify-content: center;
+  margin: auto;
 }
 
 .popup1.active {
   display: block;
+  margin:auto;
+  justify-content: center;
+  backdrop-filter: blur(3px);
 }
 
 .popup1-title {

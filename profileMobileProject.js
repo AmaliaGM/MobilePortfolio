@@ -19,19 +19,10 @@ hamburguer.addEventListener("click", () => {
 
 
 // form validation
-
-function allLetter(inputtxt)
-  {
-    let letters = document.getElementsByClassName(".email")
-
-    letters = [a-z];
-   if(inputtxt.value.match(letters))
-     {
-      return true;
-     }
-   else
-     {
-     alert("Uuups.. try again!");
-     return false;
-     }
-  }
+function mailValidation(email) {
+  email = Document.getElementById('#email');
+  let letters = /^([a-z0-9_\.\-])+\@(([a-z0-9\-])+\.)+([a-z0-9])+$/;
+        if (!letters.test(email)) {
+  alert("error: dir de correo" + email + "es incorrecta.");
+}
+}
