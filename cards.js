@@ -1,3 +1,4 @@
+/* eslint-disable imports/no-cycle */
 const cards = [
   {
     image: 'images/plan.png',
@@ -19,7 +20,6 @@ planHolder.classList = 'planholder';
 sectionD.appendChild(planHolder);
 
 for (let i = 0; i < 6; i++) {
-
   const div = document.createElement('div');
   div.classList = 'div';
   planHolder.appendChild(div);
@@ -63,7 +63,6 @@ for (let i = 0; i < 6; i++) {
   newLink2.innerText = 'css';
   newLink3.innerText = 'Java Script';
   newLink4.innerText = 'html';
-  
   const popUp = document.querySelector('.popup1');
   const projects = document.createElement('button');
   projects.classList = 'projects';
@@ -74,7 +73,6 @@ for (let i = 0; i < 6; i++) {
     append.classList.add('inactive');
   });
 
-  const append = document.getElementById('append');
   append.appendChild(sectionD)
 };
 
