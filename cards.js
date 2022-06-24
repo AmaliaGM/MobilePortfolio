@@ -18,7 +18,7 @@ const planHolder = document.createElement('div');
 planHolder.classList = 'planholder';
 sectionD.appendChild(planHolder);
 
-for(const i = 0; i < 6; i++){
+for (let i = 0; i < 6; i++) {
 
   const div = document.createElement('div');
   div.classList = 'div';
@@ -63,7 +63,8 @@ for(const i = 0; i < 6; i++){
   newLink2.innerText = 'css';
   newLink3.innerText = 'Java Script';
   newLink4.innerText = 'html';
-
+  
+  const popUp = document.querySelector('.popup1');
   const projects = document.createElement('button');
   projects.classList = 'projects';
   projects.innerText = 'See Project';
@@ -74,7 +75,7 @@ for(const i = 0; i < 6; i++){
   });
 
   const append = document.getElementById('append');
-  append.appendChild(sectionD);
+  append.appendChild(sectionD)
 };
 
 // details pop up
@@ -82,16 +83,10 @@ window.addEventListener('click', (e) => {
   const idPopUpBtn = e.target.id;
 });
 
-  
-  const popUp = document.querySelector('.popup1');
-  const imgPopM = document.querySelector('mobile.img');
-  const imgPopD = document.querySelector('desktop.img');
-
-  
-  popUp.addEventListener('click', () => {
-    popUp.classList.remove('active');
-    append.classList.remove('inactive');  
-  });
+popUp.addEventListener('click', () => {
+popUp.classList.remove('active');
+append.classList.remove('inactive');  
+});
 
 // window.addEventListener('click', (e) => {
 //   if (e.target === popUpBtn) {

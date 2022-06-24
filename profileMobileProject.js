@@ -4,21 +4,14 @@ const welcome = document.querySelector('.welcome');
 const body = document.body;
 
 hamburguer.addEventListener('click', () => {
-    hamburguer.classList.toggle('active');
-    menu.classList.toggle('active');
-    welcome.classList.toggle('inactive');
+  hamburguer.classList.toggle('active');
+  menu.classList.toggle('active');
+  welcome.classList.toggle('inactive');
 });
-
-const navLink = document.querySelector('.nav-item');
 
 hamburguer.addEventListener('click', () => {
     body.classList.toggle('stopscroll');
 });
-
-
-
-
-
 
 // form validation
 /* function mailValidation(email) {
