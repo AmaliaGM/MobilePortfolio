@@ -6,51 +6,51 @@ const cards = [
     badge2: 'css',
     badge3: 'Java Script',
     badge4: 'HTML',
-  }
+  },
 ];
 
-let append = document.getElementById("append");
-let sectionD = document.createElement("div");
+const append = document.getElementById('append');
+const sectionD = document.createElement('div');
 sectionD.classList = 'descript';
 append.appendChild(sectionD);
 
-let planHolder = document.createElement("div");
+const planHolder = document.createElement('div');
 planHolder.classList = 'planholder';
 sectionD.appendChild(planHolder);
 
-for (let i = 0; i < 6; i++) {
+for(const i = 0; i < 6; i++){
 
-  let div = document.createElement("div");
+  const div = document.createElement('div');
   div.classList = 'div';
   planHolder.appendChild(div);
 
-  let imgPH = document.createElement('img');
+  const imgPH = document.createElement('img');
   imgPH.classList = 'img';
   imgPH.src = (cards[0].image);
   div.appendChild(imgPH);
 
-  let subTitle = document.createElement('h2');
+  const subTitle = document.createElement('h2');
   subTitle.classList = 'subtitle';
   subTitle.innerHTML = cards[0].heading;
   div.appendChild(subTitle);
 
-  let newUl = document.createElement("ul");
+  const newUl = document.createElement('ul');
   newUl.classList = 'language';
   div.appendChild(newUl);
 
-  let newItem1 = document.createElement("li");
-  let newItem2 = document.createElement("li");
-  let newItem3 = document.createElement("li");
-  let newItem4 = document.createElement("li");
+  const newItem1 = document.createElement('li');
+  const newItem2 = document.createElement('li');
+  const newItem3 = document.createElement('li');
+  const newItem4 = document.createElement('li');
   newUl.appendChild(newItem1);
   newUl.appendChild(newItem2);
   newUl.appendChild(newItem3);
   newUl.appendChild(newItem4);
 
-  let newLink1 = document.createElement('a');
-  let newLink2 = document.createElement('a');
-  let newLink3 = document.createElement('a');
-  let newLink4 = document.createElement('a');
+  const newLink1 = document.createElement('a');
+  const newLink2 = document.createElement('a');
+  const newLink3 = document.createElement('a');
+  const newLink4 = document.createElement('a');
   newLink1.classList = 'button1';
   newLink2.classList = 'button1';
   newLink3.classList = 'button1';
@@ -59,21 +59,21 @@ for (let i = 0; i < 6; i++) {
   newItem2.appendChild(newLink2);
   newItem3.appendChild(newLink3);
   newItem4.appendChild(newLink4);
-  newLink1.innerText = "Ruby on Rails";
-  newLink2.innerText = "css";
-  newLink3.innerText = "Java Script";
-  newLink4.innerText = "html";
+  newLink1.innerText = 'Ruby on Rails';
+  newLink2.innerText = 'css';
+  newLink3.innerText = 'Java Script';
+  newLink4.innerText = 'html';
 
-  let projects = document.createElement('button');
-  projects.classList = "projects";
-  projects.innerText = "See Project";
+  const projects = document.createElement('button');
+  projects.classList = 'projects';
+  projects.innerText = 'See Project';
   div.appendChild(projects);
-  projects.addEventListener("click", () => {
-    popUp.classList.add("active");
-    append.classList.add("inactive");
+  projects.addEventListener('click', () => {
+    popUp.classList.add('active');
+    append.classList.add('inactive');
   });
 
-  let append = document.getElementById("append");
+  const append = document.getElementById('append');
   append.appendChild(sectionD);
 };
 
@@ -83,14 +83,14 @@ window.addEventListener('click', (e) => {
 });
 
   
-  const popUp = document.querySelector(".popup1");
-  let imgPopM = document.querySelector("mobile.img");
-  let imgPopD = document.querySelector("desktop.img");
+  const popUp = document.querySelector('.popup1');
+  const imgPopM = document.querySelector('mobile.img');
+  const imgPopD = document.querySelector('desktop.img');
 
   
-  popUp.addEventListener("click", () => {
-    popUp.classList.remove("active");
-    append.classList.remove("inactive");  
+  popUp.addEventListener('click', () => {
+    popUp.classList.remove('active');
+    append.classList.remove('inactive');  
   });
 
 // window.addEventListener('click', (e) => {
