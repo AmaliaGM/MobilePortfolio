@@ -81,8 +81,8 @@ window.addEventListener('click', (e) => {
 });
 
 popUp.addEventListener('click', () => {
-  popUp.classList.remove('active');
-  append.classList.remove('inactive');  
+popUp.classList.remove('active');
+append.classList.remove('inactive');  
 });
 // window.addEventListener('click', (e) => {
 //   if (e.target === popUpBtn) {

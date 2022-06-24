@@ -34,11 +34,11 @@ aDesk.classList = 'dSeeSource';
 desktopSee.appendChild(aDesk);
 
 const imgDL = document.createElement('img');
-imgDL.src ='images/Live.png';
+imgDL.src = 'images/Live.png';
 aDesk.appendChild(imgDL);
 
-//const imgDS = document.createElement('img');
-imgDL.src ='images/Source.png';
+// const imgDS = document.createElement('img');
+imgDL.src = 'images/Source.png';
 bDesk.appendChild(imgDL);
 
 const mobile = document.createElement('div');
