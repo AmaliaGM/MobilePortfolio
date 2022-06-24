@@ -258,7 +258,7 @@ body {
 
 .planholder {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   width: 97%;
   height: auto;
   justify-content: center;
@@ -311,7 +311,6 @@ a.button1 {
   background-color: rgb(219, 214, 214);
   margin-bottom: 4px;
   margin-left: 0%;
-  gap: 2%;
   cursor: pointer;
 }
 
@@ -678,7 +677,6 @@ div .tabletimg {
   left: 0;
   right: 0;
   bottom: 0;
-  backdrop-filter: blur(20px);
   justify-content: center;
   margin: auto;
 }
@@ -687,7 +685,7 @@ div .tabletimg {
   display: block;
   margin: auto;
   justify-content: center;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(3px);
 }
 
 .popup1-title {
@@ -749,4 +747,3 @@ ul.languages li.button1 {
     display: none;
   }
 }
-
