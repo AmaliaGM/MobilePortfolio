@@ -467,11 +467,14 @@ a.button {
 }
 
 .comment {
-  font-size: large;
- 
+  font-size: 40px;
   padding: 3%;
-  margin: 0;
+  margin: auto;
   text-align: center;
+  width: 327px;
+  line-height: 52px;
+  font-weight: 700;
+
 }
 
 .form {
@@ -519,29 +522,30 @@ a.button {
     display: flex;
     margin:auto;
     text-align: left;
-    width: 70%;
+    
     padding-top: 5%;
     padding-bottom: 5%;
     align-items: center;
     color: #172b4d;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 45px;
+    margin: auto;
   }
 
   .form {
     align-items: left;
-    
+    width: 50%;
     position: 50% 50%;
     
   }
 
   .coment {
     font-size: medium;
-    text-align: justify;
-    width: 30%;
-    margin: 5%;
-    padding: 10%;
+   
+    width: 50%;
+    margin: 0%;
+    padding: 0%;
   }
 
   .form1 {
