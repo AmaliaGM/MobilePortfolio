@@ -12,12 +12,30 @@ hamburguer.addEventListener('click', () => {
 hamburguer.addEventListener('click', () => {
   body.classList.toggle('stopscroll');
 });
+const storageName = document.getElementById('name');
+const storageMail = document.getElementById('email');
+const storageMsg = document.getElementById('message');
+const form = document.getElementById('form');
+
+form.addEventListener('input', () => {
+  localStorage.setItem('Name', storageName);
+  localStorage.setItem('Email', storageMail);
+  localStorage.setItem('Message', storageMsg);
+});
+
+storageName.value = localStorage.getItem('Name');
+storageMail.value = localStorage.getItem('Email');
+storageMsg.value = localStorage.getItem('Message');
 
 // form validation
-/* function mailValidation(email) {
-  email = Document.getElementById('#email');
-  let letters = /^([a-z0-9_\.\-])+\@(([a-z0-9\-])+\.)+([a-z0-9])+$/;
-        if (!letters.test(email)) {
-  alert('error: dir de correo' + email + 'es incorrecta.');
+function sendForm() {
+  const mail = document.getElementById('email').value;
+  if (mail === mail.toLowerCase()) {
+    return true;
+  }
+  alert('Please type only lowercase letters');
+  return false;
 }
-} */
+sendForm();
+const mail = document.getElementById('email').value;
+mail.addEventListener('focus', sendForm());

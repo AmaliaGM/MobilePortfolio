@@ -189,12 +189,12 @@
             <br>
             <div class="aboutyou">
                 <div class="comment"><p class="aboutyou-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p></div>
-                <div id="form" class="form"><form class="form1" action="https://formspree.io/f/mbjwboje" method="post">
-                    <input class="textarea" type="text" placeholder="name" maxlength="30" required>
-                    <input id="email" class="textarea email" type="email" placeholder="email" required 
-                        pattern="/^[abc]/" title="lowercase letters">
+                <div id="form" class="form"><form class="form1" onsubmit="return sendForm()" action="https://formspree.io/f/mbjwboje" method="post">
+                    <input id="name" class="textarea" type="text" placeholder="name" maxlength="30" required><br>
+                    *Enter lowercase alphabets only.
+                    <input id="email" class="textarea email" type="email" placeholder="email" required><br>
                     <textarea class="textarea" name="mdr_message" id="message" cols="50" rows="10" maxlength="500" placeholder="Enter text here" required></textarea>
-                   <button class="touch" type="submit">Get in touch
+                   <button id="touch" class="touch" type="submit">Get in touch
                         </button>
                 </form></div>
             </div>
@@ -248,9 +248,9 @@
             </div>
             
         </section>
-        <script src="cards.js"></script>
-        <script src="popUp.js"></script>
-        <script src="profileMobileProject.js"></script>
+        <script defer src="cards.js"></script>
+        <script defer src="popUp.js"></script>
+        <script defer src="profileMobileProject.js"></script>
         
         </body>
 </html>

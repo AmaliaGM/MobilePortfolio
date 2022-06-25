@@ -258,6 +258,8 @@ body {
 
 .planholder {
   display: grid;
+
+  /* eslint-disable import/no-cycle */
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   width: 97%;
   height: auto;
@@ -669,15 +671,16 @@ div .tabletimg {
 
 .popup1 {
   display: none;
-  width: 80vw;
-  height: 90vh;
+  width: auto;
+  height: 150%;
+  padding: 20%;
   background-color: #ffff;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  justify-content: center;
+  justify-content: stretch;
   margin: auto;
 }
 

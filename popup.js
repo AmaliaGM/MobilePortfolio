@@ -29,18 +29,9 @@ const aDesk = document.createElement('a');
 aDesk.classList = 'dSeeLive';
 desktopSee.appendChild(aDesk);
 
-const bDesk = document.createElement('a');
-aDesk.classList = 'dSeeSource';
-desktopSee.appendChild(aDesk);
-
 const imgDL = document.createElement('img');
 imgDL.src = 'images/Live.png';
 aDesk.appendChild(imgDL);
-
-// const imgDS = document.createElement('img');
-imgDL.src = 'images/Source.png';
-bDesk.appendChild(imgDL);
-
 const mobile = document.createElement('div');
 mobile.classList = 'mobile';
 popup1.appendChild(mobile);
