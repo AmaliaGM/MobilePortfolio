@@ -1,4 +1,4 @@
-node_modules
+oraenode_modules
 
 # Built application files
 *.apk
@@ -85,3 +85,4 @@ lint/generated/
 lint/outputs/
 lint/tmp/
 # lint/reports/
+profileMobileProject.js

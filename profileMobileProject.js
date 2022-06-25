@@ -12,12 +12,26 @@ hamburguer.addEventListener('click', () => {
 hamburguer.addEventListener('click', () => {
   body.classList.toggle('stopscroll');
 });
+//localStorage
+const storageInput = document.querySelector('name');
+const buttonS = document.querySelector('.touch');
+storageInput.addEventListener('input', name => {
+  storageInput.textContent = name.target.value
+})
 
 // form validation
-/* function mailValidation(email) {
-  email = Document.getElementById('#email');
-  let letters = /^([a-z0-9_\.\-])+\@(([a-z0-9\-])+\.)+([a-z0-9])+$/;
-        if (!letters.test(email)) {
-  alert('error: dir de correo' + email + 'es incorrecta.');
+
+
+mail.addEventListener('focus',sendForm());
+function sendForm() {
+ // const letters = /^[a-z0-9]+$/;
+  const mail = document.getElementById('email').value;
+  if (mail ===mail.toLowerCase()){
+    return true;
+}  else {
+  alert("Please type only lowercase letters");
+  return false;
 }
-} */
+}
+
+sendForm();
