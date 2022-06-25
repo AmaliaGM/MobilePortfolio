@@ -13,11 +13,32 @@ hamburguer.addEventListener('click', () => {
   body.classList.toggle('stopscroll');
 });
 //localStorage
-const storageInput = document.querySelector('name');
-const buttonS = document.querySelector('.touch');
-storageInput.addEventListener('input', name => {
-  storageInput.textContent = name.target.value
+
+let storageName = document.getElementById('name');
+let storageMail = doncument.getElementById('email');
+let storageMsg = document.getElementById('message')
+const buttonS = document.getElementById('touch');
+const form = document.getElementById('form');
+
+form.addEventListener('input', () => {
+  localStorage.setItem('Name', '${storageName}');
+  localStorage.setItem('Email', '${storageMail}');
+  localStorage.setItem('Message', '${storageMsg}');
 })
+
+storageName.value = localStorage.getItem('Name');
+storageMail.value = localStorage.getItem('Email');
+storageMsg.value = localStorage.getItem('Message');
+
+/*const saveToLocal = () => {
+  localStorage.setItem('textInput', text.textContent)
+}
+buttonS.addEventListener('click', saveToLocal)
+
+const storedInput = localStorage.getItem('textInput')
+  if (storageInput) {
+    text.textContent = storedInput;
+  } */
 
 // form validation
 
